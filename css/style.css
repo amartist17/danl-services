@@ -1,0 +1,855 @@
+/*
+* Designed and Developed by: (https://enally.in) and The TEAM.
+
+* NOTE 1: Do not make changes directly on style.css file otherwise we may charge extra for maintainance in future.
+* NOTE 2: Comment and Write all the changes on changes.md file. 
+* NOTE 3 Important: We will only assist 1 week for free but NOTE 1 and NOTE 2 should not be violated.
+
+* Code Instructions
+* 1. Main codes are on - _main.scss
+* 2. Responsive codes are on - _responsive.scss
+* 3. Color, Fonts and other variables are inside - _components.scss
+* 4. Globles Codes such as buttons, shadow, main-head, sub-heading and etc are inside - _globle.scss
+
+*/
+/*--------
+
+Color, fonts and other variables here
+
+---------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans+Narrow&display=swap");
+/*-------- Color Codes ---------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans+Narrow&display=swap");
+.font-1 {
+  color: #2154CF;
+}
+
+.font-2 {
+  color: #fff;
+}
+
+.font-3 {
+  color: #ECF2FF;
+}
+
+.font-4 {
+  color: #2154CF;
+}
+
+.font-5 {
+  color: #FE8322;
+}
+
+.font-6 {
+  color: #3AA206;
+}
+
+.font-7 {
+  color: rgba(112, 112, 112, 0.3568627451);
+}
+
+.font-8 {
+  color: #929292;
+}
+
+.font-9 {
+  color: rgba(0, 0, 0, 0.6274509804);
+}
+
+.font-10 {
+  color: rgba(33, 85, 207, 0.4823529412);
+}
+
+.background-1 {
+  color: #2154CF;
+}
+
+.background-2 {
+  color: #fff;
+}
+
+.background-3 {
+  color: #ECF2FF;
+}
+
+.background-4 {
+  color: #2154CF;
+}
+
+.background-5 {
+  color: #FE8322;
+}
+
+.background-6 {
+  color: #3AA206;
+}
+
+.background-7 {
+  color: rgba(112, 112, 112, 0.3568627451);
+}
+
+.background-8 {
+  color: #929292;
+}
+
+.background-9 {
+  color: rgba(0, 0, 0, 0.6274509804);
+}
+
+.background-10 {
+  color: rgba(33, 85, 207, 0.4823529412);
+}
+
+/*-------- Fonts Family ---------*/
+.font-1 {
+  font-family: "Segoe UI";
+}
+
+/*--------
+
+Color, fonts and other variables Ends here
+
+---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI";
+  position: relative;
+  z-index: -100;
+}
+
+header {
+  background-color: #2154CF;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8% 17%;
+}
+header .header-icons,
+header .header-items {
+  display: flex;
+}
+header .header-items {
+  justify-content: center;
+}
+header .header-items .header-item {
+  font-size: 16px;
+  margin: 0 14px;
+}
+header .header-items .header-item:first-child {
+  margin-left: 0;
+}
+header .header-items .header-item i {
+  margin-right: 4px;
+}
+header .header-icons {
+  justify-content: center;
+}
+header .header-icons .social-icons {
+  font-size: 18px;
+  margin: 0 10px;
+}
+header .header-icons .social-icons a {
+  color: #fff;
+}
+
+nav {
+  padding: 1% 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo h1 {
+  font-size: 38px;
+  color: #2154CF;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+nav .nav-items .nav-item {
+  margin: 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+nav .nav-items .nav-item:last-child {
+  margin-right: 0;
+}
+
+.hero {
+  height: 85vh;
+}
+.hero .hero-container {
+  height: 85vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center top;
+  box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.4);
+}
+.hero .hero-container .hero-data {
+  width: 60%;
+  padding: 10% 12%;
+  color: #fff;
+  position: relative;
+}
+.hero .hero-container .hero-data h4 {
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.hero .hero-container .hero-data h1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero .hero-container .hero-data p {
+  opacity: 0.8;
+}
+
+.about {
+  padding: 9% 17%;
+  display: flex;
+  justify-content: space-between;
+}
+.about .data {
+  width: 50%;
+}
+.about .data h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+.about .data h1 {
+  font-size: 34px;
+  text-transform: capitalize;
+  color: #2154CF;
+  margin-bottom: 22px;
+}
+.about .data p {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.about .data .buttons {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .data .buttons button {
+  margin-top: 22px;
+}
+.about .image {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.about .image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: -1;
+}
+
+.few-words {
+  padding: 9% 17%;
+  background-color: #ECF2FF;
+  position: relative;
+  z-index: -5;
+}
+.few-words h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #2154CF;
+  margin-bottom: 22px;
+}
+.few-words h1 {
+  font-size: 34px;
+  text-transform: capitalize;
+  margin-bottom: 37px;
+}
+.few-words .few-words-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.few-words .few-words-container .image {
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  position: relative;
+}
+.few-words .few-words-container .image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  z-index: -1;
+}
+.few-words .few-words-container .data {
+  width: 50%;
+  text-align: right;
+}
+.few-words .few-words-container .data p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+  opacity: 0.7;
+}
+.few-words .few-words-container .data p:first-child {
+  margin-bottom: 22px;
+}
+.few-words .few-words-container .data button {
+  margin-top: 44px;
+}
+
+.articles {
+  min-height: 100vh;
+  padding: 9% 17%;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/world-map.png");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articles .card {
+  background-color: #F3F7FF;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5% 2% 7%;
+  margin: 0 16px;
+  width: 50%;
+  height: 70vh;
+}
+.articles .card h4 {
+  font-size: 20px;
+  color: #2154CF;
+  text-align: center;
+  text-transform: capitalize;
+}
+.articles .card h1 {
+  font-size: 34px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.articles .card-articles .card-body .article {
+  position: relative;
+  margin: 26px auto;
+  margin-left: 24px;
+  padding-bottom: 32px;
+}
+.articles .card-articles .card-body .article::before {
+  content: "";
+  width: 100%;
+  height: 1.6px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(33, 85, 207, 0.4823529412);
+  opacity: 0.5;
+}
+.articles .card-articles .card-body .article:last-child::before {
+  content: none;
+}
+.articles .card-articles .card-body .article i {
+  position: absolute;
+  top: 16px;
+  left: -50px;
+  color: #2154CF;
+  font-size: 24px;
+}
+.articles .card-articles .card-body .article h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.articles .card-articles .card-body .article .article-details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  font-family: "Roboto Serif", serif;
+}
+.articles .card-articles .card-body .article .article-details .dp > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  outline: 4px solid #2154CF;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 12px;
+}
+.articles .card-articles .card-body .article .article-details .name {
+  color: #2154CF;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 4px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.articles .card-articles .card-body .article .article-details .date {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0 4px;
+  color: rgba(0, 0, 0, 0.6274509804);
+}
+.articles .card-articles .card-body .article .article-details .read-time {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0 4px;
+  letter-spacing: -1px;
+  color: #2154CF;
+}
+.articles .card-messages .card-body {
+  text-align: center;
+}
+.articles .card-messages .card-body .message {
+  position: relative;
+  margin: 26px auto;
+  margin-left: 24px;
+  padding-bottom: 32px;
+  text-align: justify;
+}
+.articles .card-messages .card-body .message::before {
+  content: "";
+  width: 100%;
+  height: 1.6px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(33, 85, 207, 0.4823529412);
+  opacity: 0.5;
+}
+.articles .card-messages .card-body .message:last-child::before {
+  content: none;
+}
+.articles .card-messages .card-body .message i {
+  position: absolute;
+  top: 16px;
+  left: -50px;
+  color: #2154CF;
+  font-size: 24px;
+}
+.articles .card-messages .card-body .message h5 {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.blog {
+  padding: 7% 13%;
+  background-color: #ECF2FF;
+  position: relative;
+  min-height: 100vh;
+}
+.blog .sub-heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #2154CF;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.blog h1 {
+  font-size: 34px;
+  text-transform: capitalize;
+  margin-bottom: 37px;
+  text-align: center;
+}
+.blog .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .cards .card {
+  background-color: #fff;
+  width: 32%;
+  transition-delay: 1ms;
+}
+.blog .cards .card .image {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center center;
+}
+.blog .cards .card .card-data {
+  padding: 4% 6% 6%;
+}
+.blog .cards .card .card-data .highlight {
+  display: inline-block;
+  padding: 4px 20px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.blog .cards .card .card-data h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 12px 0;
+}
+.blog .cards .card .card-data p {
+  color: #000;
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 6px 0 16px;
+}
+.blog .cards .card .card-data .blog-details {
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6274509804);
+  position: relative;
+}
+.blog .cards .card .card-data .blog-details .author {
+  color: #2154CF;
+}
+.blog .cards .card .card-data .blog-details::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.6274509804);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+
+.request-callBack {
+  padding: 6% 17%;
+  background-color: none;
+  position: relative;
+  z-index: -5;
+  background-image: url("../images/light-blob-1.png");
+  background-size: cover;
+  background-position-y: -5px;
+}
+
+.owl-prev,
+.owl-next {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  border: 0px solid #000;
+  color: #fff !important;
+  transition: 0.2s;
+}
+.owl-prev:hover i,
+.owl-next:hover i {
+  transform: scale(1.2);
+  color: #2154CF;
+}
+.owl-prev i,
+.owl-next i {
+  font-size: 40px;
+  transition: 0.2s;
+}
+
+.owl-prev {
+  left: 20px;
+}
+
+.owl-next {
+  right: 20px;
+}
+
+/*--------
+
+Color, fonts and other variables here
+
+---------*/
+/*-------- Color Codes ---------*/
+.font-1 {
+  color: #2154CF;
+}
+
+.font-2 {
+  color: #fff;
+}
+
+.font-3 {
+  color: #ECF2FF;
+}
+
+.font-4 {
+  color: #2154CF;
+}
+
+.font-5 {
+  color: #FE8322;
+}
+
+.font-6 {
+  color: #3AA206;
+}
+
+.font-7 {
+  color: rgba(112, 112, 112, 0.3568627451);
+}
+
+.font-8 {
+  color: #929292;
+}
+
+.font-9 {
+  color: rgba(0, 0, 0, 0.6274509804);
+}
+
+.font-10 {
+  color: rgba(33, 85, 207, 0.4823529412);
+}
+
+.background-1 {
+  color: #2154CF;
+}
+
+.background-2 {
+  color: #fff;
+}
+
+.background-3 {
+  color: #ECF2FF;
+}
+
+.background-4 {
+  color: #2154CF;
+}
+
+.background-5 {
+  color: #FE8322;
+}
+
+.background-6 {
+  color: #3AA206;
+}
+
+.background-7 {
+  color: rgba(112, 112, 112, 0.3568627451);
+}
+
+.background-8 {
+  color: #929292;
+}
+
+.background-9 {
+  color: rgba(0, 0, 0, 0.6274509804);
+}
+
+.background-10 {
+  color: rgba(33, 85, 207, 0.4823529412);
+}
+
+/*-------- Fonts Family ---------*/
+.font-1 {
+  font-family: "Segoe UI";
+}
+
+/*--------
+
+Color, fonts and other variables Ends here
+
+---------*/
+/*----------------------- Globle variables Starts here -------------*/
+.shadow-1 {
+  box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+  -webkit-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+  -moz-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+}
+
+.shadow-2 {
+  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.171);
+  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.171);
+  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.171);
+}
+.shadow-2:hover {
+  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.06);
+  transition-delay: 1ms;
+  transition: 0.4s;
+}
+
+.shadow-3 {
+  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  margin-top: 22px;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 22px;
+  background-color: #2154CF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  transition-delay: 1ms;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: none;
+  transition: 0.3s;
+  transition-delay: 1ms;
+}
+
+.button-2 {
+  margin-top: 22px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  background-color: #2154CF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.3s;
+  transition-delay: 1ms;
+  cursor: pointer;
+}
+.button-2:hover {
+  box-shadow: none;
+  transition: 0.3s;
+  transition-delay: 1ms;
+}
+
+.show-more {
+  margin-top: 60px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+.show-more span {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 22px;
+  color: #2154CF;
+  background-color: none;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 700;
+  transition-delay: 1ms;
+  font-family: "Segoe UI";
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.show-more span:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  transition-delay: 1ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe {
+  letter-spacing: 20px;
+  display: block;
+  border: rgba(112, 112, 112, 0.3568627451) 1px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 60%;
+  padding: 1% 2%;
+}
+.subscribe h4 {
+  letter-spacing: 0px;
+  position: relative;
+  top: 0;
+  color: #2154CF;
+  font-weight: 700;
+}
+.subscribe input {
+  background-color: none;
+  border: none;
+  border-bottom: 1px rgba(112, 112, 112, 0.3568627451) solid;
+  padding: 1% 2% 1% 1%;
+  font-size: 24px;
+  color: #929292;
+  width: 65%;
+}
+.subscribe input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px rgba(112, 112, 112, 0.3568627451) solid;
+}
+.subscribe button {
+  margin-top: 0px;
+}
+
+.sub-heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+  color: #2154CF;
+}
+
+.main-heading {
+  font-size: 34px;
+  text-transform: capitalize;
+  margin-bottom: 37px;
+}
+
+.highlight-blue {
+  background-color: #2154CF;
+}
+
+.highlight-orange {
+  background-color: #FE8322;
+}
+
+.highlight-green {
+  background-color: #3AA206;
+}
+
+.active:before {
+  content: "";
+  width: calc(100% + 8px);
+  height: 3px;
+  background-color: #2154CF;
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+}
+
+/*----------------------- Globle variables Ends here -------------*/
+/*
+
+Do not write your code here or on this page
+Instead Use the above mentioned above code instructions
+
+*//*# sourceMappingURL=style.css.map */
