@@ -21,6 +21,7 @@ $border-light: #7070705b;
 $dullGrey: #929292;
 $black-opactity: #000000a0;
 $blue-opactity: #2155cf7b;
+$blue-opactity-2: #2155cfba;
 // Font colors
 .font-1 {
     color: $main;
@@ -101,6 +102,10 @@ $blue-opactity: #2155cf7b;
 
 .background-10 {
     color: $blue-opactity;
+}
+
+.background-11 {
+    color: $blue-opactity-2;
 }
 
 

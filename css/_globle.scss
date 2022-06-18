@@ -87,7 +87,7 @@ button {
         transition: 0.3s;
         font-weight: 700;
         transition-delay: 1ms;
-        font-family: 'Segoe UI';
+        font-family: $primary;
         cursor: pointer;
         text-transform: uppercase;
         &:hover {

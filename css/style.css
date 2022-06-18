@@ -102,6 +102,10 @@ Color, fonts and other variables here
   color: rgba(33, 85, 207, 0.4823529412);
 }
 
+.background-11 {
+  color: rgba(33, 85, 207, 0.7294117647);
+}
+
 /*-------- Fonts Family ---------*/
 .font-1 {
   font-family: "Segoe UI";
@@ -227,8 +231,6 @@ nav .nav-items .nav-item:last-child {
   padding: 9% 17%;
   display: flex;
   justify-content: space-between;
-  background-image: url("../images/light-blob-1.png");
-  background-size: cover;
 }
 .about .data {
   width: 50%;
@@ -389,6 +391,7 @@ nav .nav-items .nav-item:last-child {
 }
 .few-words .few-words-container .data button {
   margin-top: 44px;
+  float: right;
 }
 
 .articles {
@@ -604,7 +607,7 @@ nav .nav-items .nav-item:last-child {
 }
 
 .services {
-  padding: 5% 13% 7%;
+  padding: 5% 17% 7%;
 }
 .services .cards {
   display: flex;
@@ -628,7 +631,7 @@ nav .nav-items .nav-item:last-child {
   font-size: 22px;
   font-weight: 700;
   color: white;
-  background-color: rgba(33, 85, 207, 0.7843137255);
+  background-color: rgba(33, 85, 207, 0.7294117647);
 }
 
 .social-media {
@@ -648,6 +651,11 @@ nav .nav-items .nav-item:last-child {
   align-items: center;
   justify-content: center;
 }
+.social-media .cards .card:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
 .request-callBack {
   padding: 6% 17%;
@@ -657,38 +665,6 @@ nav .nav-items .nav-item:last-child {
   background-image: url("../images/light-blob-1.png");
   background-size: cover;
   background-position-y: -5px;
-  -webkit-animation: call-back-bg 4s infinite alternate;
-  animation: call-back-bg 4s infinite alternate;
-  -webkit-animation-duration: 3.3s;
-          animation-duration: 3.3s;
-}
-@-webkit-keyframes call-back-bg {
-  0% {
-    transition-duration: 4ms;
-    -webkit-animation-duration: 4.3s;
-            animation-duration: 4.3s;
-    background-image: url("../images/light-blob-1.png");
-  }
-  100% {
-    transition-duration: 4ms;
-    -webkit-animation-duration: 4.3s;
-            animation-duration: 4.3s;
-    background-image: url("../images/light-blob-2.png");
-  }
-}
-@keyframes call-back-bg {
-  0% {
-    transition-duration: 4ms;
-    -webkit-animation-duration: 4.3s;
-            animation-duration: 4.3s;
-    background-image: url("../images/light-blob-1.png");
-  }
-  100% {
-    transition-duration: 4ms;
-    -webkit-animation-duration: 4.3s;
-            animation-duration: 4.3s;
-    background-image: url("../images/light-blob-2.png");
-  }
 }
 
 .owl-prev,
@@ -805,6 +781,10 @@ Color, fonts and other variables here
 
 .background-10 {
   color: rgba(33, 85, 207, 0.4823529412);
+}
+
+.background-11 {
+  color: rgba(33, 85, 207, 0.7294117647);
 }
 
 /*-------- Fonts Family ---------*/

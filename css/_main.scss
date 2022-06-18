@@ -106,7 +106,7 @@ nav {
             p {
                 opacity: 0.8;
             }
-            button{
+            button {
                 margin-top: 22px;
             }
         }
@@ -118,9 +118,8 @@ nav {
     padding: 9% 17%;
     display: flex;
     justify-content: space-between;
-    background-image: url('../images/light-blob-1.png');
-    background-size: cover;
-
+    // background-image: url('../images/light-blob-1.png');
+    // background-size: cover;
     // align-items: center;
     .data {
         width: 50%;
@@ -144,13 +143,11 @@ nav {
         }
         .buttons {
             display: flex;
-            
             align-items: center;
             justify-content: flex-start;
             button {
                 margin: 44px 4px;
-
-                i{
+                i {
                     font-size: 18px;
                     margin-right: 4px;
                 }
@@ -259,6 +256,7 @@ nav {
             }
             button {
                 margin-top: 44px;
+                float: right;
             }
         }
     }
@@ -467,7 +465,6 @@ nav {
                     font-weight: 500;
                     color: $black-opactity;
                     position: relative;
-
                     .author {
                         color: $main;
                     }
@@ -484,65 +481,60 @@ nav {
             }
         }
     }
-
-
 }
 
-.services{
-    padding: 5% 13% 7%;
-
-    .cards{
+.services {
+    padding: 5% 17% 7%;
+    .cards {
         display: flex;
-        justify-content:space-between;
-        a{
+        justify-content: space-between;
+        a {
             width: 30%;
         }
-        .card{
+        .card {
             // width: 30%;
             height: 240px;
             background-size: cover;
             border-radius: 4px;
             display: flex;
             align-items: center;
-            justify-content:center;
-            .data{
+            justify-content: center;
+            .data {
                 width: 80%;
                 padding: 16px;
                 text-align: center;
                 font-size: 22px;
                 font-weight: 700;
                 color: white;
-                background-color: #2155cfc8;
+                background-color: $blue-opactity-2;
                 // transform: rotate(45deg);
             }
         }
     }
 }
 
-.social-media{
+.social-media {
     padding: 5% 13% 7%;
     background-color: $light-bg;
-
-    .cards{
+    .cards {
         display: flex;
-        justify-content:space-between;
-
-        .card{
+        justify-content: space-between;
+        .card {
             width: 16%;
             height: 160px;
             background-size: cover;
             border-radius: 4px;
             display: flex;
             align-items: center;
-            justify-content:center;
-           
+            justify-content: center;
+            &:hover {
+                transform: scale(1.1);
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
         }
     }
 }
-
-
-
-
 
 // Call back section
 .request-callBack {
@@ -553,21 +545,6 @@ nav {
     background-image: url('../images/light-blob-1.png');
     background-size: cover;
     background-position-y: -5px;
-    -webkit-animation: call-back-bg 4s infinite alternate;
-    animation: call-back-bg 4s infinite alternate;
-    animation-duration: 3.3s;
-    @keyframes call-back-bg {
-        0% {
-            transition-duration: 4ms;
-            animation-duration: 4.3s;
-            background-image: url('../images/light-blob-1.png');
-        }
-        100% {
-            transition-duration: 4ms;
-            animation-duration: 4.3s;
-            background-image: url('../images/light-blob-2.png');
-        }
-    }
 }
 
 .owl-prev,
