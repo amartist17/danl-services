@@ -584,8 +584,8 @@ nav .nav-items .nav-item:last-child {
   justify-content: space-between;
 }
 .social-media .cards .card {
-  width: 14%;
-  height: 140px;
+  width: 16%;
+  height: 160px;
   background-size: cover;
   border-radius: 4px;
   display: flex;
