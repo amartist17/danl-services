@@ -1,0 +1,557 @@
+@import '_components.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary;
+    position: relative;
+    z-index: -100;
+}
+
+header {
+    background-color: $main;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8% 17%;
+    .header-icons,
+    .header-items {
+        display: flex;
+    }
+    .header-items {
+        justify-content: center;
+        .header-item {
+            font-size: 16px;
+            margin: 0 14px;
+            &:first-child {
+                margin-left: 0;
+            }
+            i {
+                margin-right: 4px;
+            }
+        }
+    }
+    .header-icons {
+        justify-content: center;
+        .social-icons {
+            font-size: 18px;
+            margin: 0 10px;
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+nav {
+    padding: 1% 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        h1 {
+            font-size: 38px;
+            color: $main;
+            font-weight: 700;
+            letter-spacing: 6px;
+        }
+    }
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        .nav-item {
+            margin: 0 24px;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    height: 85vh;
+    .hero-container {
+        height: 85vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center top;
+        box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.4);
+        .hero-data {
+            width: 60%;
+            padding: 10% 12%;
+            color: $white;
+            position: relative;
+            h4 {
+                font-size: 34px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 12px
+            }
+            h1 {
+                font-size: 56px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            p {
+                opacity: 0.8;
+            }
+            button{
+                margin-top: 22px;
+            }
+        }
+    }
+}
+
+// About Sections
+.about {
+    padding: 9% 17%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../images/light-blob-1.png');
+    background-size: cover;
+
+    // align-items: center;
+    .data {
+        width: 50%;
+        // padding: 1% 4%;
+        h4 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 22px;
+        }
+        h1 {
+            font-size: 34px;
+            text-transform: capitalize;
+            color: $main;
+            margin-bottom: 22px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            opacity: 0.7;
+        }
+        .buttons {
+            display: flex;
+            
+            align-items: center;
+            justify-content: flex-start;
+            button {
+                margin: 44px 4px;
+
+                i{
+                    font-size: 18px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+    .image {
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 1px solid $black;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            z-index: -1;
+        }
+    }
+}
+
+// Few Words sections
+.few-words {
+    padding: 9% 17%;
+    background-color: $light-bg;
+    position: relative;
+    z-index: -5;
+    h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        color: $main;
+        margin-bottom: 22px;
+    }
+    h1 {
+        font-size: 34px;
+        text-transform: capitalize;
+        margin-bottom: calc(22px + 15px);
+    }
+    .few-words-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .image {
+            width: 450px;
+            height: 450px;
+            background-size: cover;
+            // background-position: center center;
+            position: relative;
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                border: 1px solid $black;
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                z-index: -1;
+            }
+        }
+        .data {
+            width: 50%;
+            // text-align: right;
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                text-align: justify;
+                opacity: 0.7;
+                &:first-child {
+                    margin-bottom: 22px;
+                }
+            }
+            button {
+                margin-top: 44px;
+            }
+        }
+    }
+}
+
+// Articles Sections
+.articles {
+    min-height: 100vh;
+    padding: 9% 17%;
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url("../images/world-map.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    .card {
+        background-color: #F3F7FF;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 5% 2% 7%;
+        margin: 0 16px;
+        width: 50%;
+        min-height: 70vh;
+        h4 {
+            font-size: 20px;
+            color: $main;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        h1 {
+            font-size: 34px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+    .card-articles {
+        .card-body {
+            .article {
+                position: relative;
+                margin: 26px auto;
+                margin-left: 24px;
+                padding-bottom: 32px;
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 1.6px;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: $blue-opactity;
+                    opacity: 0.5;
+                }
+                &:last-child::before {
+                    content: none;
+                }
+                i {
+                    position: absolute;
+                    top: 16px;
+                    left: -50px;
+                    color: $main;
+                    font-size: 24px;
+                }
+                h5 {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                .article-details {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 12px;
+                    font-family: $article-font;
+                    .dp>img {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        outline: 4px solid $main;
+                        object-fit: cover;
+                        margin-right: 12px;
+                    }
+                    .name {
+                        color: $main;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        margin: 0 4px;
+                        font-family: $article-name-font;
+                    }
+                    .date {
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        margin: 0 4px;
+                        color: $black-opactity;
+                    }
+                    .read-time {
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        margin: 0 4px;
+                        letter-spacing: -1px;
+                        color: $main;
+                    }
+                }
+            }
+        }
+    }
+    .card-messages {
+        .card-body {
+            text-align: center;
+            .message {
+                position: relative;
+                margin: 26px auto;
+                margin-left: 24px;
+                padding: 12px 0 32px;
+                text-align: justify;
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 1.6px;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: $blue-opactity;
+                    opacity: 0.5;
+                }
+                &:last-child::before {
+                    content: none;
+                }
+                i {
+                    position: absolute;
+                    top: 16px;
+                    left: -50px;
+                    color: $main;
+                    font-size: 24px;
+                }
+                h5 {
+                    font-size: 18px;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+// Blog Sections
+.blog {
+    padding: 4% 13% 7%;
+    background-color: $light-bg;
+    position: relative;
+    min-height: 100vh;
+    .sub-heading {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        color: $main;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 34px;
+        text-transform: capitalize;
+        margin-bottom: calc(22px + 15px);
+        text-align: center;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        .card {
+            background-color: $white;
+            width: 32%;
+            transition-delay: 1ms;
+            min-height: vh;
+            // margin : 0 12px;
+            .image {
+                width: 100%;
+                height: 240px;
+                background-size: cover;
+                background-position: center center;
+            }
+            .card-data {
+                padding: 4% 6% 6%;
+                position: relative;
+                .highlight {
+                    display: inline-block;
+                    padding: 4px 20px;
+                    color: $white;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+                h4 {
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin: 12px 0;
+                }
+                p {
+                    color: $black;
+                    opacity: 0.6;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin: 6px 0 16px;
+                }
+                .blog-details {
+                    padding-top: 16px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $black-opactity;
+                    position: relative;
+
+                    .author {
+                        color: $main;
+                    }
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        background-color: $black-opactity;
+                        opacity: 0.6;
+                        position: absolute;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.services{
+    padding: 5% 13% 7%;
+
+    .cards{
+        display: flex;
+        justify-content:space-between;
+        a{
+            width: 30%;
+        }
+        .card{
+            // width: 30%;
+            height: 240px;
+            background-size: cover;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            .data{
+                width: 80%;
+                padding: 16px;
+                text-align: center;
+                font-size: 22px;
+                font-weight: 700;
+                color: white;
+                background-color: #2155cfc8;
+                // transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.social-media{
+    padding: 5% 13% 7%;
+    background-color: $light-bg;
+
+    .cards{
+        display: flex;
+        justify-content:space-between;
+
+        .card{
+            width: 16%;
+            height: 160px;
+            background-size: cover;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+           
+        }
+    }
+}
+
+
+
+
+
+// Call back section
+.request-callBack {
+    padding: 6% 17%;
+    background-color: none;
+    position: relative;
+    z-index: -5;
+    background-image: url('../images/light-blob-1.png');
+    background-size: cover;
+    background-position-y: -5px;
+}
+
+.owl-prev,
+.owl-next {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border: 0px solid $black;
+    color: $white !important;
+    transition: 0.2s;
+    &:hover i {
+        transform: scale(1.2);
+        color: $main;
+    }
+    i {
+        font-size: 40px;
+        transition: 0.2s;
+    }
+}
+
+.owl-prev {
+    left: 20px;
+}
+
+.owl-next {
+    right: 20px;
+}
+
+// .owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
