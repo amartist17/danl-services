@@ -32,7 +32,7 @@
 
 // Button Global
 button {
-    margin-top: 22px;
+    // margin-top: 22px;
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 22px;
@@ -123,13 +123,13 @@ a {
         top: 0;
         color: $main;
         font-weight: 700;
+        font-size: 20px;
     }
     input {
-        background-color: none;
         border: none;
         border-bottom: 1px $border-light solid;
         padding: 1% 2% 1% 1%;
-        font-size: 24px;
+        font-size: 22px;
         color: $dullGrey;
         width: 65%;
         &:focus {

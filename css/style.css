@@ -219,11 +219,16 @@ nav .nav-items .nav-item:last-child {
 .hero .hero-container .hero-data p {
   opacity: 0.8;
 }
+.hero .hero-container .hero-data button {
+  margin-top: 22px;
+}
 
 .about {
   padding: 9% 17%;
   display: flex;
   justify-content: space-between;
+  background-image: url("../images/light-blob-1.png");
+  background-size: cover;
 }
 .about .data {
   width: 50%;
@@ -247,12 +252,15 @@ nav .nav-items .nav-item:last-child {
 }
 .about .data .buttons {
   display: flex;
-  width: 60%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .about .data .buttons button {
-  margin-top: 22px;
+  margin: 44px 4px;
+}
+.about .data .buttons button i {
+  font-size: 18px;
+  margin-right: 4px;
 }
 .about .image {
   width: 400px;
@@ -369,7 +377,6 @@ nav .nav-items .nav-item:last-child {
 }
 .few-words .few-words-container .data {
   width: 50%;
-  text-align: right;
 }
 .few-words .few-words-container .data p {
   font-size: 18px;
@@ -391,7 +398,6 @@ nav .nav-items .nav-item:last-child {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .articles .card {
@@ -401,7 +407,7 @@ nav .nav-items .nav-item:last-child {
   padding: 2% 5% 2% 7%;
   margin: 0 16px;
   width: 50%;
-  height: 70vh;
+  min-height: 70vh;
 }
 .articles .card h4 {
   font-size: 20px;
@@ -487,7 +493,7 @@ nav .nav-items .nav-item:last-child {
   position: relative;
   margin: 26px auto;
   margin-left: 24px;
-  padding-bottom: 32px;
+  padding: 12px 0 32px;
   text-align: justify;
 }
 .articles .card-messages .card-body .message::before {
@@ -510,12 +516,12 @@ nav .nav-items .nav-item:last-child {
   font-size: 24px;
 }
 .articles .card-messages .card-body .message h5 {
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.8;
 }
 
 .blog {
-  padding: 7% 13%;
+  padding: 4% 13% 7%;
   background-color: #ECF2FF;
   position: relative;
   min-height: 100vh;
@@ -542,6 +548,7 @@ nav .nav-items .nav-item:last-child {
   background-color: #fff;
   width: 32%;
   transition-delay: 1ms;
+  min-height: vh;
 }
 .blog .cards .card .image {
   width: 100%;
@@ -551,6 +558,7 @@ nav .nav-items .nav-item:last-child {
 }
 .blog .cards .card .card-data {
   padding: 4% 6% 6%;
+  position: relative;
 }
 .blog .cards .card .card-data .highlight {
   display: inline-block;
@@ -593,6 +601,52 @@ nav .nav-items .nav-item:last-child {
   opacity: 0.6;
   position: absolute;
   top: 0;
+}
+
+.services {
+  padding: 5% 13% 7%;
+}
+.services .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.services .cards a {
+  width: 30%;
+}
+.services .cards .card {
+  height: 240px;
+  background-size: cover;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .cards .card .data {
+  width: 80%;
+  padding: 16px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(33, 85, 207, 0.7843137255);
+}
+
+.social-media {
+  padding: 5% 13% 7%;
+  background-color: #ECF2FF;
+}
+.social-media .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.social-media .cards .card {
+  width: 16%;
+  height: 160px;
+  background-size: cover;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .request-callBack {
@@ -790,7 +844,6 @@ Color, fonts and other variables Ends here
 }
 
 button {
-  margin-top: 22px;
   font-size: 20px;
   text-transform: capitalize;
   padding: 10px 22px;
@@ -878,13 +931,13 @@ a {
   top: 0;
   color: #2154CF;
   font-weight: 700;
+  font-size: 20px;
 }
 .subscribe input {
-  background-color: none;
   border: none;
   border-bottom: 1px rgba(112, 112, 112, 0.3568627451) solid;
   padding: 1% 2% 1% 1%;
-  font-size: 24px;
+  font-size: 22px;
   color: #929292;
   width: 65%;
 }
