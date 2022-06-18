@@ -270,6 +270,34 @@ nav .nav-items .nav-item:last-child {
   left: 15px;
   bottom: 15px;
   z-index: -1;
+  -webkit-animation: about-image 1s infinite alternate;
+  animation: about-image 1s infinite alternate;
+  -webkit-animation-duration: 1.3s ease;
+          animation-duration: 1.3s ease;
+}
+@-webkit-keyframes about-image {
+  0% {
+    transform: translateY(0);
+    border: 1px solid #FE8322;
+    transition-duration: 4ms ease;
+  }
+  100% {
+    transform: translateY(-15px);
+    transition-duration: 4ms ease;
+    border: 1px solid #3AA206;
+  }
+}
+@keyframes about-image {
+  0% {
+    transform: translateY(0);
+    border: 1px solid #FE8322;
+    transition-duration: 4ms ease;
+  }
+  100% {
+    transform: translateY(-15px);
+    transition-duration: 4ms ease;
+    border: 1px solid #3AA206;
+  }
 }
 
 .few-words {
@@ -310,6 +338,34 @@ nav .nav-items .nav-item:last-child {
   right: 15px;
   bottom: 15px;
   z-index: -1;
+  -webkit-animation: few-words 1s infinite alternate;
+  animation: few-words 1s infinite alternate;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+@-webkit-keyframes few-words {
+  0% {
+    transform: translateY(0);
+    border: 1px solid #FE8322;
+    transition-duration: 4ms;
+  }
+  100% {
+    transform: translateY(-15px);
+    transition-duration: 4ms;
+    border: 1px solid #3AA206;
+  }
+}
+@keyframes few-words {
+  0% {
+    transform: translateY(0);
+    border: 1px solid #FE8322;
+    transition-duration: 4ms;
+  }
+  100% {
+    transform: translateY(-15px);
+    transition-duration: 4ms;
+    border: 1px solid #3AA206;
+  }
 }
 .few-words .few-words-container .data {
   width: 50%;
@@ -508,7 +564,7 @@ nav .nav-items .nav-item:last-child {
 .blog .cards .card .card-data h4 {
   color: #000;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 0;
   text-transform: capitalize;
   margin: 12px 0;
 }
@@ -547,6 +603,38 @@ nav .nav-items .nav-item:last-child {
   background-image: url("../images/light-blob-1.png");
   background-size: cover;
   background-position-y: -5px;
+  -webkit-animation: call-back-bg 4s infinite alternate;
+  animation: call-back-bg 4s infinite alternate;
+  -webkit-animation-duration: 3.3s;
+          animation-duration: 3.3s;
+}
+@-webkit-keyframes call-back-bg {
+  0% {
+    transition-duration: 4ms;
+    -webkit-animation-duration: 4.3s;
+            animation-duration: 4.3s;
+    background-image: url("../images/light-blob-1.png");
+  }
+  100% {
+    transition-duration: 4ms;
+    -webkit-animation-duration: 4.3s;
+            animation-duration: 4.3s;
+    background-image: url("../images/light-blob-2.png");
+  }
+}
+@keyframes call-back-bg {
+  0% {
+    transition-duration: 4ms;
+    -webkit-animation-duration: 4.3s;
+            animation-duration: 4.3s;
+    background-image: url("../images/light-blob-1.png");
+  }
+  100% {
+    transition-duration: 4ms;
+    -webkit-animation-duration: 4.3s;
+            animation-duration: 4.3s;
+    background-image: url("../images/light-blob-2.png");
+  }
 }
 
 .owl-prev,
@@ -559,17 +647,16 @@ nav .nav-items .nav-item:last-child {
   display: block !important;
   border: 0px solid #000;
   color: #fff !important;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 .owl-prev:hover i,
 .owl-next:hover i {
   transform: scale(1.2);
-  color: #2154CF;
 }
 .owl-prev i,
 .owl-next i {
   font-size: 40px;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
 .owl-prev {

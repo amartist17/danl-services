@@ -161,6 +161,21 @@ nav {
             left: 15px;
             bottom: 15px;
             z-index: -1;
+            -webkit-animation: about-image 1s infinite alternate;
+            animation: about-image 1s infinite alternate;
+            animation-duration: 1.3s ease;
+            @keyframes about-image {
+                0% {
+                    transform: translateY(0);
+                    border: 1px solid $highlight-orange;
+                    transition-duration: 4ms ease;
+                }
+                100% {
+                    transform: translateY(-15px);
+                    transition-duration: 4ms ease;
+                    border: 1px solid $highlight-green;
+                }
+            }
         }
     }
 }
@@ -202,6 +217,21 @@ nav {
                 right: 15px;
                 bottom: 15px;
                 z-index: -1;
+                -webkit-animation: few-words 1s infinite alternate;
+                animation: few-words 1s infinite alternate;
+                animation-duration: 1.3s;
+                @keyframes few-words {
+                    0% {
+                        transform: translateY(0);
+                        border: 1px solid $highlight-orange;
+                        transition-duration: 4ms;
+                    }
+                    100% {
+                        transform: translateY(-15px);
+                        transition-duration: 4ms;
+                        border: 1px solid $highlight-green;
+                    }
+                }
             }
         }
         .data {
@@ -407,7 +437,7 @@ nav {
                 h4 {
                     color: $black;
                     font-size: 14px;
-                    font-weight: 700;
+                    font-weight: 00;
                     text-transform: capitalize;
                     margin: 12px 0;
                 }
@@ -451,6 +481,21 @@ nav {
     background-image: url('../images/light-blob-1.png');
     background-size: cover;
     background-position-y: -5px;
+    -webkit-animation: call-back-bg 4s infinite alternate;
+    animation: call-back-bg 4s infinite alternate;
+    animation-duration: 3.3s;
+    @keyframes call-back-bg {
+        0% {
+            transition-duration: 4ms;
+            animation-duration: 4.3s;
+            background-image: url('../images/light-blob-1.png');
+        }
+        100% {
+            transition-duration: 4ms;
+            animation-duration: 4.3s;
+            background-image: url('../images/light-blob-2.png');
+        }
+    }
 }
 
 .owl-prev,
@@ -463,14 +508,13 @@ nav {
     display: block !important;
     border: 0px solid $black;
     color: $white !important;
-    transition: 0.2s;
+    transition: 0.2s ease;
     &:hover i {
         transform: scale(1.2);
-        color: $main;
     }
     i {
         font-size: 40px;
-        transition: 0.2s;
+        transition: 0.2s ease;
     }
 }
 
