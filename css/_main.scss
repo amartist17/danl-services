@@ -514,24 +514,30 @@ nav {
 }
 
 .social-media {
-    padding: 5% 13% 7%;
+    padding: 5% 13%;
     background-color: $light-bg;
-    .cards {
-        display: flex;
-        justify-content: space-between;
-        .card {
-            width: 16%;
-            height: 160px;
-            background-size: cover;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &:hover {
-                transform: scale(1.1);
-                transition-duration: 0.4s;
-                cursor: pointer;
-            }
+    /* Float four columns side by side */
+    .column {
+        float: left;
+        width: 20%;
+        padding: 0 10px;
+    }
+    .row {
+        margin: 0 -5px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .card {
+        height: 200px;
+        width: 200px;
+        background-position: center;
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 0.4s;
+            cursor: pointer;
         }
     }
 }
@@ -545,6 +551,78 @@ nav {
     background-image: url('../images/light-blob-1.png');
     background-size: cover;
     background-position-y: -5px;
+}
+
+.footer {
+    padding: 7% 13%;
+    background-color: $main;
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+    }
+    .row {
+        margin: 0 -5px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .card {
+        color: $white;
+        padding-right: 20px;
+        h2 {
+            font-size: 56px;
+            padding-bottom: 10px;
+        }
+        h4 {
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        p {
+            padding: 10px 0;
+        }
+        h3 {
+            padding: 20px 0;
+            font-size: 22px;
+        }
+        .links {
+            padding: 83px 40px 0 40px;
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-size: 22px;
+                padding: 10px 0;
+                li {
+                    padding-left: 10px;
+                    transition-duration: 0.4s;
+                    .far {
+                        padding-right: 8px;
+                        font-size: 20px;
+                    }
+                    &:hover {
+                        transform: translateX(10px);
+                        cursor: pointer;
+                        transition-duration: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    padding: 1% 13%;
+    h4 {
+        width: 100%;
+        color: $main;
+        span {
+            float: right;
+        }
+    }
 }
 
 .owl-prev,

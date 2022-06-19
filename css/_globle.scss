@@ -1,6 +1,97 @@
 @import '_components.scss';
+// Font colors
+.font-1 {
+    color: $main;
+}
 
-/*----------------------- Globle variables Starts here -------------*/
+.font-2 {
+    color: $white;
+}
+
+.font-3 {
+    color: $light-bg;
+}
+
+.font-4 {
+    color: $highlight-blue;
+}
+
+.font-5 {
+    color: $highlight-orange;
+}
+
+.font-6 {
+    color: $highlight-green;
+}
+
+.font-7 {
+    color: $border-light;
+}
+
+.font-8 {
+    color: $dullGrey;
+}
+
+.font-9 {
+    color: $black-opactity;
+}
+
+.font-10 {
+    color: $blue-opactity;
+}
+
+// Background colors
+.background-1 {
+    color: $main;
+}
+
+.background-2 {
+    color: $white;
+}
+
+.background-3 {
+    color: $light-bg;
+}
+
+.background-4 {
+    color: $highlight-blue;
+}
+
+.background-5 {
+    color: $highlight-orange;
+}
+
+.background-6 {
+    color: $highlight-green;
+}
+
+.background-7 {
+    color: $border-light;
+}
+
+.background-8 {
+    color: $dullGrey;
+}
+
+.background-9 {
+    color: $black-opactity;
+}
+
+.background-10 {
+    color: $blue-opactity;
+}
+
+.background-11 {
+    color: $blue-opactity-2;
+}
+
+//Fonts
+.font-1 {
+    font-family: $primary;
+}
+
+
+/*----------------------- Globle classes Starts here -------------*/
 
 // Globle shadow-1
 .shadow-1 {
@@ -184,4 +275,4 @@ a {
 }
 
 
-/*----------------------- Globle variables Ends here -------------*/
+/*----------------------- Globle classes Ends here -------------*/

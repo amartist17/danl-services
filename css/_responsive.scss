@@ -1,0 +1,104 @@
+@import '_components.scss';
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .card {
+            .links {
+                padding: 84px 10px 0 0px;
+                ul {
+                    padding: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 1% 13%;
+        h4 {
+            width: 100%;
+            span {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+                gap: 10px;
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+    // newslatter , phone and subscribe
+    .newsletter {
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe {
+        display: block;
+        width: 100%;
+        padding: 4% 2%;
+        h4 {
+            letter-spacing: 0px;
+            position: relative;
+            top: 0;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        input {
+            padding: 1% 2% 1% 1%;
+            font-size: 17px;
+            width: 55%;
+        }
+        button {
+            margin-top: 0px;
+            font-size: 15px;
+        }
+    }
+    .main-heading {
+        font-size: 28px;
+    }
+    .sub-heading {
+        font-size: 20px;
+    }
+    .social-media {
+        .column {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    //
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    //
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    //
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    //
+}
