@@ -411,51 +411,51 @@ nav .nav-items .nav-item:last-child {
   margin-top: 22px;
 }
 
-.about {
+.about, .services {
   padding: 7% 17%;
   display: flex;
   justify-content: space-between;
 }
-.about .data {
+.about .data, .services .data {
   width: 50%;
 }
-.about .data h4 {
+.about .data h4, .services .data h4 {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 22px;
 }
-.about .data h1 {
+.about .data h1, .services .data h1 {
   font-size: 34px;
   text-transform: capitalize;
   color: #2154CF;
   margin-bottom: 22px;
 }
-.about .data p {
+.about .data p, .services .data p {
   font-size: 18px;
   font-weight: 500;
   opacity: 0.7;
 }
-.about .data .buttons {
+.about .data .buttons, .services .data .buttons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.about .data .buttons button {
+.about .data .buttons button, .services .data .buttons button {
   margin: 44px 4px;
 }
-.about .data .buttons button i {
+.about .data .buttons button i, .services .data .buttons button i {
   font-size: 18px;
   margin-right: 4px;
 }
-.about .image {
+.about .image, .services .image {
   width: 400px;
   height: 400px;
   background-size: cover;
   background-position: center center;
   position: relative;
 }
-.about .image::before {
+.about .image::before, .services .image::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -464,34 +464,6 @@ nav .nav-items .nav-item:last-child {
   left: 15px;
   bottom: 15px;
   z-index: -1;
-  -webkit-animation: about-image 1s infinite alternate;
-  animation: about-image 1s infinite alternate;
-  -webkit-animation-duration: 1.3s ease;
-          animation-duration: 1.3s ease;
-}
-@-webkit-keyframes about-image {
-  0% {
-    transform: translateY(0);
-    border: 1px solid #000;
-    transition-duration: 3s;
-  }
-  100% {
-    transform: translateY(-15px);
-    transition-duration: 3s;
-    border: 1px solid #2154CF;
-  }
-}
-@keyframes about-image {
-  0% {
-    transform: translateY(0);
-    border: 1px solid #000;
-    transition-duration: 3s;
-  }
-  100% {
-    transform: translateY(-15px);
-    transition-duration: 3s;
-    border: 1px solid #2154CF;
-  }
 }
 
 .few-words {
@@ -532,34 +504,6 @@ nav .nav-items .nav-item:last-child {
   right: 15px;
   bottom: 15px;
   z-index: -1;
-  -webkit-animation: few-words 1s infinite alternate;
-  animation: few-words 1s infinite alternate;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
-}
-@-webkit-keyframes few-words {
-  0% {
-    transform: translateY(0);
-    border: 1px solid #000;
-    transition-duration: 4ms;
-  }
-  100% {
-    transform: translateY(-15px);
-    transition-duration: 4ms;
-    border: 1px solid #2154CF;
-  }
-}
-@keyframes few-words {
-  0% {
-    transform: translateY(0);
-    border: 1px solid #000;
-    transition-duration: 4ms;
-  }
-  100% {
-    transform: translateY(-15px);
-    transition-duration: 4ms;
-    border: 1px solid #2154CF;
-  }
 }
 .few-words .few-words-container .data {
   width: 50%;
@@ -959,7 +903,7 @@ nav .nav-items .nav-item:last-child {
   right: 20px;
 }
 
-.about-hero {
+.about-hero, .services-hero {
   height: 85vh;
   background-size: cover;
   background-position: center top;
@@ -967,23 +911,23 @@ nav .nav-items .nav-item:last-child {
   padding: 10% 12%;
   color: #fff;
 }
-.about-hero h4 {
+.about-hero h4, .services-hero h4 {
   font-size: 34px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-.about-hero h1 {
+.about-hero h1, .services-hero h1 {
   font-size: 56px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.about-hero p {
+.about-hero p, .services-hero p {
   opacity: 0.8;
   width: 50%;
 }
-.about-hero button {
+.about-hero button, .services-hero button {
   margin-top: 22px;
 }
 
@@ -1006,31 +950,27 @@ nav .nav-items .nav-item:last-child {
   z-index: -5;
   position: relative;
 }
-.about .about-page {
-  width: 50%;
-  position: relative;
-}
-.about .about-page h4 {
+.about h4 {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 22px;
   color: #2154CF !important;
 }
-.about .about-page h1 {
+.about h1 {
   font-size: 34px;
   text-transform: capitalize;
   margin-bottom: 22px;
   color: #000 !important;
 }
-.about .about-page p {
+.about p {
   font-size: 18px;
   font-weight: 500;
   opacity: 0.7;
   padding-bottom: 22px;
   position: relative;
 }
-.about .about-page p:last-child::before {
+.about p:last-child::before {
   content: "";
   width: 20%;
   height: 2px;
@@ -1053,30 +993,6 @@ nav .nav-items .nav-item:last-child {
 .about .video img {
   width: 80px;
   height: 50px;
-  -webkit-animation: blink-button 1s infinite alternate;
-  animation: blink-button 1s infinite alternate;
-}
-@-webkit-keyframes blink-button {
-  0% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes blink-button {
-  0% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .about .video:hover {
   box-shadow: none;
@@ -1198,6 +1114,38 @@ nav .nav-items .nav-item:last-child {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
+}
+
+.services-overlap {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 42px;
+  color: #2154CF;
+  background-color: white;
+  transform: translateY(-50%);
+  padding: 1% 3%;
+  width: 60%;
+  border-radius: 4px;
+}
+.services-overlap .service {
+  cursor: pointer;
+}
+.services-overlap h6 {
+  font-size: 18px;
+}
+
+.services {
+  align-items: center;
+}
+.services .button {
+  margin: 44px 4px;
+}
+.services .image {
+  height: 550px;
+}
+.services:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: #ECF2FF;
 }
 
 /*--------
