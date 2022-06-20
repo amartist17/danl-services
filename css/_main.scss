@@ -115,7 +115,7 @@ nav {
 
 // About Sections
 .about {
-    padding: 9% 17%;
+    padding: 7% 17%;
     display: flex;
     justify-content: space-between;
     // background-image: url('../images/light-blob-1.png');
@@ -175,13 +175,13 @@ nav {
             @keyframes about-image {
                 0% {
                     transform: translateY(0);
-                    border: 1px solid $highlight-orange;
-                    transition-duration: 4ms ease;
+                    border: 1px solid $black;
+                    transition-duration: 3s;
                 }
                 100% {
                     transform: translateY(-15px);
-                    transition-duration: 4ms ease;
-                    border: 1px solid $highlight-green;
+                    transition-duration: 3s;
+                    border: 1px solid $main;
                 }
             }
         }
@@ -231,13 +231,13 @@ nav {
                 @keyframes few-words {
                     0% {
                         transform: translateY(0);
-                        border: 1px solid $highlight-orange;
+                        border: 1px solid $black;
                         transition-duration: 4ms;
                     }
                     100% {
                         transform: translateY(-15px);
                         transition-duration: 4ms;
-                        border: 1px solid $highlight-green;
+                        border: 1px solid $main;
                     }
                 }
             }
@@ -654,11 +654,8 @@ nav {
 }
 
 // .owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
-
-
 // ------------------------------------about----------------------------------
-
-.about-hero{
+.about-hero {
     // width: 100vw;
     height: 85vh;
     background-size: cover;
@@ -666,7 +663,6 @@ nav {
     box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.4);
     padding: 10% 12%;
     color: $white;
-
     h4 {
         font-size: 34px;
         font-weight: 400;
@@ -688,14 +684,13 @@ nav {
     }
 }
 
-.overlap{
+.overlap {
     font-size: 26px;
     color: white;
     background-color: $main;
     text-align: center;
     margin: 0 auto;
     transform: translateY(-50%);
-
     padding: 1% 3%;
     width: 60%;
     border-radius: 4px;
@@ -709,22 +704,21 @@ nav {
     // background-color: $light-bg;
     z-index: -5;
     position: relative;
-
-    .data {
+    .about-page {
         width: 50%;
         position: relative;
-
         h4 {
             font-size: 20px;
             text-transform: uppercase;
             letter-spacing: -1px;
             margin-bottom: 22px;
+            color: $main !important;
         }
         h1 {
             font-size: 34px;
             text-transform: capitalize;
-            color: $main;
             margin-bottom: 22px;
+            color: $black !important;
         }
         p {
             font-size: 18px;
@@ -732,85 +726,119 @@ nav {
             opacity: 0.7;
             padding-bottom: 22px;
             position: relative;
-
-            &:last-child::before{
+            &:last-child::before {
                 content: "";
                 width: 20%;
                 height: 2px;
                 position: absolute;
                 bottom: 0;
                 background-color: $main;
-    
-    
             }
         }
     }
-    .image {
+    .video {
         width: 400px;
         height: 400px;
         background-size: cover;
         background-position: center center;
         position: relative;
-        &::before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            border: 1px solid $main;
-            position: absolute;
-            right: 15px;
-            bottom: 15px;
-            z-index: -1;
-
+        box-shadow: inset 0 0 0 2000px $black-opactity-video;
+        transition-duration: 0.5s;
+        display: flex;
+        justify-content: center;
+        padding: 18%;
+        img {
+            width: 80px;
+            height: 50px;
+            -webkit-animation: blink-button 1s infinite alternate;
+            animation: blink-button 1s infinite alternate;
+            @keyframes blink-button {
+                0% {
+                    opacity: 0.9;
+                }
+                50% {
+                    opacity: 0.6;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+        &:hover {
+            box-shadow: none;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            img {
+                opacity: 0.8;
+            }
         }
     }
 }
 
 .about-story {
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
     background-color: $light-bg;
-    .image {
-                width: 400px;
-                height: 550px;
-
-                &::before {
-                    right: 15px;
-                    left: unset !important ;
-                    bottom: 15px;
-        
-                }
-    }
-    }
-
-.about-vision {
     .image {
         width: 400px;
         height: 550px;
+        border: 1px $black solid;
+        &::before {
+            right: 15px;
+            left: unset !important;
+            bottom: 15px;
+            background-image: url('../images/Rectangle-49.png');
+        }
+    }
+    .data {
+        h1 {
+            text-align: right;
+        }
+        h4 {
+            text-align: right;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+.about-vision {
+    .image {
+        position: relative;
+        width: 400px;
+        height: 800px;
+        top: -107px;
+        box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.150);
+        -webkit-box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.150);
+        -moz-box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.150);
         &::before {
             left: 15px;
             top: 15px;
-
         }
-}
+    }
 }
 
 .about-team {
-display: flex;
-// min-height: 60vh;
+    display: flex;
+    // min-height: 60vh;
     .team-data {
         width: 50%;
         position: relative;
         padding: 10% 8.5%;
+        background-color: $light-bg;
         h4 {
             font-size: 20px;
             text-transform: uppercase;
             letter-spacing: -1px;
             margin-bottom: 22px;
+            text-align: right;
         }
         h1 {
             font-size: 34px;
             text-transform: capitalize;
             color: $main;
             margin-bottom: 22px;
+            text-align: right;
         }
         p {
             font-size: 18px;
@@ -818,56 +846,49 @@ display: flex;
             opacity: 0.7;
             padding-bottom: 22px;
             position: relative;
-
-            &:last-child::before{
+            text-align: justify;
+            &:last-child::before {
                 content: "";
                 width: 20%;
                 height: 2px;
                 position: absolute;
                 bottom: 0;
+                right: 0;
                 background-color: $main;
-    
-    
             }
         }
     }
-    .team-image{
+    .team-image {
         padding: 4% 0;
         width: 50%;
         background-color: $main;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
-        .member-image-container{
+        .member-image-container {
             width: 34%;
             margin: 20px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             border-radius: 0%;
-            .member-image{
+            .member-image {
                 width: 180px;
                 height: 180px;
             }
-
-            h5{
-                color:white;
+            h5 {
+                color: white;
                 text-transform: capitalize;
-                font-size: 20px;
+                font-size: 22px;
                 margin: 12px 0 6px;
-                font-weight: 600;
+                font-weight: 700;
             }
-
-            h6{
-                color:white;
+            h6 {
+                color: white;
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 400;
             }
-
-
         }
-
     }
 }

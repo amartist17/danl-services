@@ -412,7 +412,7 @@ nav .nav-items .nav-item:last-child {
 }
 
 .about {
-  padding: 9% 17%;
+  padding: 7% 17%;
   display: flex;
   justify-content: space-between;
 }
@@ -472,25 +472,25 @@ nav .nav-items .nav-item:last-child {
 @-webkit-keyframes about-image {
   0% {
     transform: translateY(0);
-    border: 1px solid #FE8322;
-    transition-duration: 4ms ease;
+    border: 1px solid #000;
+    transition-duration: 3s;
   }
   100% {
     transform: translateY(-15px);
-    transition-duration: 4ms ease;
-    border: 1px solid #3AA206;
+    transition-duration: 3s;
+    border: 1px solid #2154CF;
   }
 }
 @keyframes about-image {
   0% {
     transform: translateY(0);
-    border: 1px solid #FE8322;
-    transition-duration: 4ms ease;
+    border: 1px solid #000;
+    transition-duration: 3s;
   }
   100% {
     transform: translateY(-15px);
-    transition-duration: 4ms ease;
-    border: 1px solid #3AA206;
+    transition-duration: 3s;
+    border: 1px solid #2154CF;
   }
 }
 
@@ -540,25 +540,25 @@ nav .nav-items .nav-item:last-child {
 @-webkit-keyframes few-words {
   0% {
     transform: translateY(0);
-    border: 1px solid #FE8322;
+    border: 1px solid #000;
     transition-duration: 4ms;
   }
   100% {
     transform: translateY(-15px);
     transition-duration: 4ms;
-    border: 1px solid #3AA206;
+    border: 1px solid #2154CF;
   }
 }
 @keyframes few-words {
   0% {
     transform: translateY(0);
-    border: 1px solid #FE8322;
+    border: 1px solid #000;
     transition-duration: 4ms;
   }
   100% {
     transform: translateY(-15px);
     transition-duration: 4ms;
-    border: 1px solid #3AA206;
+    border: 1px solid #2154CF;
   }
 }
 .few-words .few-words-container .data {
@@ -1006,30 +1006,31 @@ nav .nav-items .nav-item:last-child {
   z-index: -5;
   position: relative;
 }
-.about .data {
+.about .about-page {
   width: 50%;
   position: relative;
 }
-.about .data h4 {
+.about .about-page h4 {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 22px;
+  color: #2154CF !important;
 }
-.about .data h1 {
+.about .about-page h1 {
   font-size: 34px;
   text-transform: capitalize;
-  color: #2154CF;
   margin-bottom: 22px;
+  color: #000 !important;
 }
-.about .data p {
+.about .about-page p {
   font-size: 18px;
   font-weight: 500;
   opacity: 0.7;
   padding-bottom: 22px;
   position: relative;
 }
-.about .data p:last-child::before {
+.about .about-page p:last-child::before {
   content: "";
   width: 20%;
   height: 2px;
@@ -1037,22 +1038,53 @@ nav .nav-items .nav-item:last-child {
   bottom: 0;
   background-color: #2154CF;
 }
-.about .image {
+.about .video {
   width: 400px;
   height: 400px;
   background-size: cover;
   background-position: center center;
   position: relative;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5411764706);
+  transition-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+  padding: 18%;
 }
-.about .image::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border: 1px solid #2154CF;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  z-index: -1;
+.about .video img {
+  width: 80px;
+  height: 50px;
+  -webkit-animation: blink-button 1s infinite alternate;
+  animation: blink-button 1s infinite alternate;
+}
+@-webkit-keyframes blink-button {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink-button {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.about .video:hover {
+  box-shadow: none;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.about .video:hover img {
+  opacity: 0.8;
 }
 
 .about-story {
@@ -1062,16 +1094,32 @@ nav .nav-items .nav-item:last-child {
 .about-story .image {
   width: 400px;
   height: 550px;
+  border: 1px #000 solid;
 }
 .about-story .image::before {
   right: 15px;
   left: unset !important;
   bottom: 15px;
+  background-image: url("../images/Rectangle-49.png");
+}
+.about-story .data h1 {
+  text-align: right;
+}
+.about-story .data h4 {
+  text-align: right;
+}
+.about-story .data p {
+  text-align: justify;
 }
 
 .about-vision .image {
+  position: relative;
   width: 400px;
-  height: 550px;
+  height: 800px;
+  top: -107px;
+  box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.15);
 }
 .about-vision .image::before {
   left: 15px;
@@ -1085,18 +1133,21 @@ nav .nav-items .nav-item:last-child {
   width: 50%;
   position: relative;
   padding: 10% 8.5%;
+  background-color: #ECF2FF;
 }
 .about-team .team-data h4 {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 22px;
+  text-align: right;
 }
 .about-team .team-data h1 {
   font-size: 34px;
   text-transform: capitalize;
   color: #2154CF;
   margin-bottom: 22px;
+  text-align: right;
 }
 .about-team .team-data p {
   font-size: 18px;
@@ -1104,6 +1155,7 @@ nav .nav-items .nav-item:last-child {
   opacity: 0.7;
   padding-bottom: 22px;
   position: relative;
+  text-align: justify;
 }
 .about-team .team-data p:last-child::before {
   content: "";
@@ -1111,6 +1163,7 @@ nav .nav-items .nav-item:last-child {
   height: 2px;
   position: absolute;
   bottom: 0;
+  right: 0;
   background-color: #2154CF;
 }
 .about-team .team-image {
@@ -1136,14 +1189,14 @@ nav .nav-items .nav-item:last-child {
 .about-team .team-image .member-image-container h5 {
   color: white;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 22px;
   margin: 12px 0 6px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .about-team .team-image .member-image-container h6 {
   color: white;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
 }
 
