@@ -15,6 +15,8 @@
         referrerpolicy="no-referrer" />
     <!-- style css -->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/main.js"></script>
 </head>
 
@@ -47,11 +49,21 @@
             <h1>DANL</h1>
         </div>
         <ul class="nav-items">
-            <li class="nav-item active">Home</li>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Services</li>
-            <li class="nav-item">Blog</li>
-            <li class="nav-item">Contact</li>
+            <a href="home.html">
+                <li class="nav-item active">Home</li>
+            </a>
+            <a href="about.html">
+                <li class="nav-item">About</li>
+            </a>
+            <a href="services.html">
+                <li class="nav-item">Services</li>
+            </a>
+            <a href="blog.html">
+                <li class="nav-item">Blog</li>
+            </a>
+            <a href="contact.html">
+                <li class="nav-item">Contact</li>
+            </a>
         </ul>
     </nav>
 
@@ -69,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="hero-container item" style="background-image: url(../images/pexels-andrea-piacquadio-840996.jpg); background-position: center;">
+            <div class="hero-container item" style="background-image: url(../images/slider-img-2.jpg); background-position: center;">
                 <div class="hero-data">
                     <h4>Welcome to</h4>
                     <h1>Danl group</h1>
@@ -78,6 +90,17 @@
                     </p>
 
                     <button class="shadow-1">Let's go</button>
+                </div>
+            </div>
+            <div class="hero-container item" style="background-image: url(../images/slider-image-3.jpg); background-position: center;">
+                <div class="hero-data">
+                    <h4>Welcome to</h4>
+                    <h1>Danl group</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsam adipisci ducimus rerum tempore magni autem quibusdam accusamus. Perspiciatis, minus.
+                    </p>
+
+                    <button class="shadow-1">Slider 3</button>
                 </div>
             </div>
         </div>
@@ -390,9 +413,7 @@
     </section>
     <section class="copyright">
         <h4>DANL GROUP PVT LTD. <span>Copyright © <script> document.write(new Date().getFullYear()) ; </script> Domain.com  All Rights Reserved.</span></h4>
-    </section>
-    <section class="copyright">
-        <h4 style="color: #2154CF; text-align: center;" id="credit"></h4>
+        <h4 id="credit">Designed and Developed with ❤ by <a href='https://enally.in' target='_blank'>enally.in</a></h4>
     </section>
 
     <!-- jquery -->
@@ -401,28 +422,6 @@
     <!-- owl carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: true,
-                dots: false,
-                items: 1,
-                autoplay: true,
-                autoplayHoverPause: true,
-                autoplaySpeed: 1000,
-                navText: [
-                    '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-                    '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-                ],
-            });
-        });
-
-
-        //
-        document.getElementById("footer-btn").click();
-    </script>
 </body>
 
 </html>

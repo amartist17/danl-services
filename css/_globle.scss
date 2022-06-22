@@ -121,6 +121,13 @@
     -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.150);
 }
 
+// Globle shadow-4 dark and large color without hover
+.shadow-4 {
+    -webkit-box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.277);
+    -moz-box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.292);
+    box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.279);
+}
+
 // Button Global
 button {
     // margin-top: 22px;
@@ -138,6 +145,20 @@ button {
         box-shadow: none;
         transition: 0.3s;
         transition-delay: 1ms;
+    }
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px $border-light solid;
+    padding: 1% 2% 1% 1%;
+    font-size: 22px;
+    color: $dullGrey;
+    &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px $border-light solid;
     }
 }
 
