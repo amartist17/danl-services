@@ -914,7 +914,7 @@ nav {
     .service {
         cursor: pointer;
         img {
-            width: 100px;
+            width: 60px;
         }
     }
     h6 {
@@ -1072,6 +1072,8 @@ nav {
 
 // --------------------------------------contact--------------------------------
 .contact-section {
+    font-family: 'Poppins', sans-serif;
+
     padding: 20% 13%;
     padding-top: 7%;
     background-image: url('../images/contact-wave-2.png');
@@ -1097,13 +1099,11 @@ nav {
             h1 {
                 font-size: 42px;
                 color: $main;
-                font-weight: 800;
+                font-weight: 700;
                 margin-bottom: 23px;
                 text-transform: uppercase;
                 letter-spacing: 4px;
-                span {
-                    color: $important;
-                }
+              
             }
             input {
                 margin-bottom: 22px;
@@ -1126,6 +1126,7 @@ nav {
                 }
                 &::placeholder {
                     color: $dullGrey;
+                    font-size: 14px;
                 }
             }
         }
@@ -1146,15 +1147,23 @@ nav {
             h4 {
                 font-size: 42px;
                 text-transform: uppercase;
-                font-weight: 800;
+                font-weight: 500;
                 margin-bottom: 16px;
             }
             p {
-                opacity: 0.8;
+                opacity: 0.8; 
+                margin-bottom: 22px;
             }
             .detail {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
+                p{
+                    flex: 80%;
+                    margin-left: 32px;
+                }
+
+                
             }
             i {
                 width: 10%;
@@ -1163,6 +1172,10 @@ nav {
                 font-size: 18px;
                 font-weight: 600;
                 margin: 22px 0;
+                
+            }
+            .address{
+                margin: 6px 0 ;
             }
         }
     }
@@ -1260,5 +1273,93 @@ nav {
     }
     a {
         color: $main;
+    }
+}
+
+
+// --------------------------------------contact--------------------------------
+
+.blog-main{
+    padding: 3% 13% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .blog-title{
+        font-size: 46px;
+        color: $main;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 38px;
+        line-height: 1.4;
+
+    }
+    h5{
+        color: rgba(0, 0, 0, 0.805);
+        font-weight:500;
+        
+        span{
+            color:$main;
+        }
+    }
+
+    .blog-main-image{
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        margin: 38px 0;
+    }
+    p{
+        margin-bottom: 36px;
+    }
+
+    .blog-quote{
+        font-size: 32px;
+        color: $main;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 30px auto 60px 0;
+        position: relative;
+        padding: 24px;
+        letter-spacing: 3px;
+        font-family: 'Poppins', sans-serif;
+
+
+        &::before{
+            content: "";
+            position: absolute;
+            height:100%;
+            width: 3px;
+            left: 0;
+            top: 0;
+            background-color: $main;
+        }
+
+    }
+
+    .blog-social{
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        h6{
+            font-size: 16px;
+            font-weight: 700;
+            opacity: 0.8;
+            color: $main;
+
+        }
+        i{
+            margin: 4px 12px 0;
+            font-size: 18px;
+        }
+    }
+    hr{
+        width: 60%;
+        opacity: 0.6;
+        position: absolute;
+        bottom: 0;
     }
 }

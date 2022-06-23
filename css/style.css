@@ -17,8 +17,8 @@
 Color, fonts and other variables here
 
 ---------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
 /*-------- Color Codes ---------*/
 /*-------- Fonts Family ---------*/
 /*--------
@@ -26,10 +26,10 @@ Color, fonts and other variables here
 Color, fonts and other variables Ends here
 
 ---------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans+Narrow&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
 .font-1 {
   color: #2154CF;
 }
@@ -1201,7 +1201,7 @@ nav .nav-items .nav-item:last-child {
   cursor: pointer;
 }
 .services-overlap .service img {
-  width: 100px;
+  width: 60px;
 }
 .services-overlap h6 {
   font-size: 18px;
@@ -1349,6 +1349,7 @@ nav .nav-items .nav-item:last-child {
 }
 
 .contact-section {
+  font-family: "Poppins", sans-serif;
   padding: 20% 13%;
   padding-top: 7%;
   background-image: url("../images/contact-wave-2.png");
@@ -1375,13 +1376,10 @@ nav .nav-items .nav-item:last-child {
 .contact-section .main-block .contact-form h1 {
   font-size: 42px;
   color: #2154CF;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 23px;
   text-transform: uppercase;
   letter-spacing: 4px;
-}
-.contact-section .main-block .contact-form h1 span {
-  color: #cc0000;
 }
 .contact-section .main-block .contact-form input {
   margin-bottom: 22px;
@@ -1408,13 +1406,16 @@ nav .nav-items .nav-item:last-child {
 }
 .contact-section .main-block .contact-form input::-moz-placeholder, .contact-section .main-block .contact-form textarea::-moz-placeholder {
   color: #929292;
+  font-size: 14px;
 }
 .contact-section .main-block .contact-form input:-ms-input-placeholder, .contact-section .main-block .contact-form textarea:-ms-input-placeholder {
   color: #929292;
+  font-size: 14px;
 }
 .contact-section .main-block .contact-form input::placeholder,
 .contact-section .main-block .contact-form textarea::placeholder {
   color: #929292;
+  font-size: 14px;
 }
 .contact-section .main-block .contact-details {
   width: 50%;
@@ -1434,15 +1435,21 @@ nav .nav-items .nav-item:last-child {
 .contact-section .main-block .contact-details h4 {
   font-size: 42px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
   margin-bottom: 16px;
 }
 .contact-section .main-block .contact-details p {
   opacity: 0.8;
+  margin-bottom: 22px;
 }
 .contact-section .main-block .contact-details .detail {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+.contact-section .main-block .contact-details .detail p {
+  flex: 80%;
+  margin-left: 32px;
 }
 .contact-section .main-block .contact-details i {
   width: 10%;
@@ -1451,6 +1458,9 @@ nav .nav-items .nav-item:last-child {
   font-size: 18px;
   font-weight: 600;
   margin: 22px 0;
+}
+.contact-section .main-block .contact-details .address {
+  margin: 6px 0;
 }
 
 .contact-hero .map {
@@ -1517,7 +1527,7 @@ nav .nav-items .nav-item:last-child {
   font-size: 13px;
 }
 #credit:hover {
-  right: 29;
+  right: 37;
 }
 @-webkit-keyframes credit {
   0% {
@@ -1567,6 +1577,81 @@ nav .nav-items .nav-item:last-child {
 }
 #credit a {
   color: #2154CF;
+}
+
+.blog-main {
+  padding: 3% 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.blog-main .blog-title {
+  font-size: 46px;
+  color: #2154CF;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 38px;
+  line-height: 1.4;
+}
+.blog-main h5 {
+  color: rgba(0, 0, 0, 0.805);
+  font-weight: 500;
+}
+.blog-main h5 span {
+  color: #2154CF;
+}
+.blog-main .blog-main-image {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  margin: 38px 0;
+}
+.blog-main p {
+  margin-bottom: 36px;
+}
+.blog-main .blog-quote {
+  font-size: 32px;
+  color: #2154CF;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 30px auto 60px 0;
+  position: relative;
+  padding: 24px;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+}
+.blog-main .blog-quote::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: 0;
+  top: 0;
+  background-color: #2154CF;
+}
+.blog-main .blog-social {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.blog-main .blog-social h6 {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8;
+  color: #2154CF;
+}
+.blog-main .blog-social i {
+  margin: 4px 12px 0;
+  font-size: 18px;
+}
+.blog-main hr {
+  width: 60%;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0;
 }
 
 /*--------
