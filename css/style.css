@@ -148,6 +148,11 @@ Color, fonts and other variables Ends here
   box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.279);
 }
 
+.light-hr {
+  color: rgba(0, 0, 0, 0.6274509804);
+  opacity: 0.4;
+}
+
 button {
   font-size: 20px;
   text-transform: capitalize;
@@ -714,7 +719,7 @@ nav .nav-items .nav-item:last-child {
   background-color: #fff;
   width: 32%;
   transition-delay: 1ms;
-  min-height: vh;
+  min-height: 60vh;
 }
 .blog .cards .card .image {
   width: 100%;
@@ -1472,14 +1477,12 @@ nav .nav-items .nav-item:last-child {
   border-radius: 50%;
   position: relative;
   top: -230px;
-  transition-delay: 0.8s ease;
+  transition-duration: 0.9s;
 }
 .contact-hero .map img:hover {
   transform: rotate(10deg);
   cursor: pointer;
-  width: 410px;
-  height: 410px;
-  transition-delay: 0.8s ease;
+  transition-duration: 0.9s;
 }
 
 .visitors {
@@ -1513,6 +1516,10 @@ nav .nav-items .nav-item:last-child {
   border-radius: 50%;
   border: 2px #fff solid;
 }
+.visitors .visitors-container .visitor-image:hover {
+  border: 2px #FE8322 solid;
+  cursor: pointer;
+}
 
 #credit {
   color: #2154CF;
@@ -1527,7 +1534,7 @@ nav .nav-items .nav-item:last-child {
   font-size: 13px;
 }
 #credit:hover {
-  right: 37;
+  right: 19;
 }
 @-webkit-keyframes credit {
   0% {
@@ -1580,7 +1587,7 @@ nav .nav-items .nav-item:last-child {
 }
 
 .blog-main {
-  padding: 3% 13%;
+  padding: 3% 17%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1613,9 +1620,9 @@ nav .nav-items .nav-item:last-child {
   margin-bottom: 36px;
 }
 .blog-main .blog-quote {
-  font-size: 32px;
+  font-size: 30px;
   color: #2154CF;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: capitalize;
   margin: 30px auto 60px 0;
   position: relative;
@@ -1645,11 +1652,25 @@ nav .nav-items .nav-item:last-child {
 }
 .blog-main .blog-social i {
   margin: 4px 12px 0;
-  font-size: 18px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.blog-main .blog-social i:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.6s;
+}
+.blog-main .blog-social .fa-facebook {
+  color: #4267B2;
+}
+.blog-main .blog-social .fa-whatsapp {
+  color: #075E54;
+}
+.blog-main .blog-social .fa-twitter {
+  color: #1DA1F2;
 }
 .blog-main hr {
   width: 60%;
-  opacity: 0.6;
+  opacity: 0.5;
   position: absolute;
   bottom: 0;
 }

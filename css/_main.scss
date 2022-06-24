@@ -432,7 +432,7 @@ nav {
             background-color: $white;
             width: 32%;
             transition-delay: 1ms;
-            min-height: vh;
+            min-height: 60vh;
             // margin : 0 12px;
             .image {
                 width: 100%;
@@ -1073,7 +1073,6 @@ nav {
 // --------------------------------------contact--------------------------------
 .contact-section {
     font-family: 'Poppins', sans-serif;
-
     padding: 20% 13%;
     padding-top: 7%;
     background-image: url('../images/contact-wave-2.png');
@@ -1103,7 +1102,6 @@ nav {
                 margin-bottom: 23px;
                 text-transform: uppercase;
                 letter-spacing: 4px;
-              
             }
             input {
                 margin-bottom: 22px;
@@ -1151,19 +1149,17 @@ nav {
                 margin-bottom: 16px;
             }
             p {
-                opacity: 0.8; 
+                opacity: 0.8;
                 margin-bottom: 22px;
             }
             .detail {
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                p{
+                p {
                     flex: 80%;
                     margin-left: 32px;
                 }
-
-                
             }
             i {
                 width: 10%;
@@ -1172,10 +1168,9 @@ nav {
                 font-size: 18px;
                 font-weight: 600;
                 margin: 22px 0;
-                
             }
-            .address{
-                margin: 6px 0 ;
+            .address {
+                margin: 6px 0;
             }
         }
     }
@@ -1190,13 +1185,11 @@ nav {
             border-radius: 50%;
             position: relative;
             top: -230px;
-            transition-delay: 0.8s ease;
+            transition-duration: .9s;
             &:hover {
                 transform: rotate(10deg);
                 cursor: pointer;
-                width: 410px;
-                height: 410px;
-                transition-delay: 0.8s ease;
+                transition-duration: .9s;
             }
         }
     }
@@ -1231,6 +1224,10 @@ nav {
             border-radius: 50%;
             border: 2px $white solid;
             // margin: 0 30px;
+            &:hover {
+                border: 2px $highlight-orange solid;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -1276,17 +1273,14 @@ nav {
     }
 }
 
-
-// --------------------------------------contact--------------------------------
-
-.blog-main{
-    padding: 3% 13% ;
+// --------------------------------------blog page--------------------------------
+.blog-main {
+    padding: 3% 17%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-
-    .blog-title{
+    .blog-title {
         font-size: 46px;
         color: $main;
         font-weight: 600;
@@ -1295,70 +1289,75 @@ nav {
         font-family: 'Poppins', sans-serif;
         margin-bottom: 38px;
         line-height: 1.4;
-
     }
-    h5{
+    h5 {
         color: rgba(0, 0, 0, 0.805);
-        font-weight:500;
-        
-        span{
-            color:$main;
+        font-weight: 500;
+        span {
+            color: $main;
         }
     }
-
-    .blog-main-image{
+    .blog-main-image {
         width: 100%;
         height: 60vh;
         background-size: cover;
         margin: 38px 0;
     }
-    p{
+    p {
         margin-bottom: 36px;
     }
-
-    .blog-quote{
-        font-size: 32px;
+    .blog-quote {
+        font-size: 30px;
         color: $main;
-        font-weight: 700;
+        font-weight: 800;
         text-transform: capitalize;
         margin: 30px auto 60px 0;
         position: relative;
         padding: 24px;
         letter-spacing: 3px;
         font-family: 'Poppins', sans-serif;
-
-
-        &::before{
+        &::before {
             content: "";
             position: absolute;
-            height:100%;
+            height: 100%;
             width: 3px;
             left: 0;
             top: 0;
             background-color: $main;
         }
-
     }
-
-    .blog-social{
+    .blog-social {
         display: flex;
         align-items: center;
         margin-top: 60px;
-        h6{
+        h6 {
             font-size: 16px;
             font-weight: 700;
             opacity: 0.8;
             color: $main;
-
         }
-        i{
+        i {
             margin: 4px 12px 0;
-            font-size: 18px;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover {
+                transform: translateY(-5px);
+                transition-duration: 0.6s;
+            }
+        }
+        .fa-facebook {
+            color: $facebook;
+        }
+        .fa-whatsapp {
+            color: $whatsapp;
+        }
+        .fa-twitter {
+            color: $twitter;
         }
     }
-    hr{
+    hr {
         width: 60%;
-        opacity: 0.6;
+        opacity: 0.5;
         position: absolute;
         bottom: 0;
     }
