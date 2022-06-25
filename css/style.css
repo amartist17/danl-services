@@ -283,7 +283,7 @@ a {
   color: #2154CF;
 }
 
-.main-heading {
+.heading {
   font-size: 34px;
   text-transform: capitalize;
   margin-bottom: 22px;
@@ -1557,7 +1557,7 @@ nav .ham-burger-open span:nth-child(3) {
   font-size: 13px;
 }
 #credit:hover {
-  right: 39;
+  right: 23;
 }
 @-webkit-keyframes credit {
   0% {
