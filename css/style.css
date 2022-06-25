@@ -248,7 +248,7 @@ a {
   padding: 1% 2%;
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
 }
 .subscribe h4 {
   color: #2154CF;
@@ -1557,7 +1557,7 @@ nav .ham-burger-open span:nth-child(3) {
   font-size: 13px;
 }
 #credit:hover {
-  right: 23;
+  right: 40;
 }
 @-webkit-keyframes credit {
   0% {
@@ -1746,6 +1746,10 @@ Color, fonts and other variables Ends here
   .about .image, .services .image, .few-words .image {
     width: 400px;
     height: 400px;
+  }
+
+  .request-callBack .newsletter .subscribe {
+    width: 80%;
   }
 
   .articles, .blog, .home-services, .social-media, .request-callBack, .lets-talk, .reviews {
