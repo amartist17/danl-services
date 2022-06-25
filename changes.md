@@ -12,3 +12,11 @@
 9. from shadow 2 remove hover effect
 10. placeholders in inputs in contact page
 11. image change and data filling and icons changing in contact page
+
+<!-- ---------------------------------------------------------------- -->
+
+change logo font
+
+design and developed by enally is coming in between page
+
+work with credit section and make it responsive
