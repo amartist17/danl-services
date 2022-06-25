@@ -1322,6 +1322,10 @@ nav {
 }
 
 // --------------------------------------blog page--------------------------------
+.blog-nav{
+    border-bottom: 1px solid $main;
+}
+
 .blog-main {
     padding: 3% 17%;
     display: flex;
