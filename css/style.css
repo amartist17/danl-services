@@ -332,11 +332,15 @@ Color, fonts and other variables Ends here
 
 body {
   font-family: "Segoe UI";
+  position: relative;
+  z-index: -10;
 }
 
 .body {
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  z-index: -9;
 }
 
 header {
@@ -612,7 +616,7 @@ nav .ham-burger-open span:nth-child(3) {
   padding: 9% 13%;
   background-color: #ECF2FF;
   position: relative;
-  z-index: -5;
+  z-index: 1;
 }
 .few-words h1 {
   margin-bottom: 37px;
@@ -1553,7 +1557,7 @@ nav .ham-burger-open span:nth-child(3) {
   font-size: 13px;
 }
 #credit:hover {
-  right: 12;
+  right: 39;
 }
 @-webkit-keyframes credit {
   0% {
