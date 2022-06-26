@@ -11,6 +11,7 @@
 4. Call Back Form validation and backend connection.
 5. Message form validation and backend Connection.
 6. Change Youtube link.
+7. Print page function
 
 
 * MUST ADD THIS FILE (main.js) to each front-end page to make things functional.
@@ -48,8 +49,8 @@ $(".ham-burger").click(function() {
 // Youtube Link
 $(document).ready(function() {
     $("#youtube").click(function() {
-        open('https://youtu.be/4ge-6IwzrQU', '_blank')
-            // Change Youtube Link here...
+        open('https://youtu.be/4ge-6IwzrQU', '_blank');
+        // Change Youtube Link here...
     });
 });
 
@@ -143,4 +144,9 @@ $("#callBack").click(function() {
 // Send message button
 $("#msgButton").click(function() {
     sendMessage();
+});
+
+// Print Page button
+$("#printPage").click(function() {
+    window.print();
 });
