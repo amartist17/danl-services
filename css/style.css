@@ -245,6 +245,10 @@ a {
   justify-content: center;
 }
 
+#response {
+  text-align: center;
+}
+
 .subscribe {
   border: rgba(112, 112, 112, 0.3568627451) 1px solid;
   border-radius: 5px;
@@ -1574,7 +1578,7 @@ nav .ham-burger-open span:nth-child(3) {
   font-size: 13px;
 }
 #credit:hover {
-  right: 25;
+  right: 28;
 }
 @-webkit-keyframes credit {
   0% {
@@ -2415,6 +2419,7 @@ Color, fonts and other variables Ends here
 
   nav .nav-items {
     width: 100%;
+    height: calc(65vh + 70px);
   }
   nav .nav-items li {
     margin: 30px auto !important;
@@ -2489,6 +2494,9 @@ Color, fonts and other variables Ends here
 
   .social-media .column {
     width: 50%;
+  }
+  .social-media .column .image {
+    margin: auto;
   }
   .social-media .column:last-child {
     display: none;
@@ -2580,6 +2588,9 @@ Color, fonts and other variables Ends here
     height: 50px;
   }
 
+  .blog-main {
+    padding: 3% 7%;
+  }
   .blog-main h1 {
     font-size: 26px !important;
   }

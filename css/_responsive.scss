@@ -661,6 +661,7 @@
         nav {
             .nav-items {
                 width: 100%;
+                height: calc(65vh + 70px);
                 li {
                     margin: 30px auto !important;
                 }
@@ -733,6 +734,9 @@
         .social-media {
             .column {
                 width: 50%;
+                .image{
+                    margin: auto;
+                }
                 &:last-child {
                     display: none;
                 }
@@ -845,6 +849,7 @@
             }
         }
         .blog-main {
+            padding: 3% 7%;
             h1 {
                 font-size: 26px !important;
             }
