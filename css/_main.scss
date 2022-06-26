@@ -9,14 +9,13 @@ body {
     font-family: $primary;
     position: relative;
     z-index: -10;
-
 }
-.body{
+
+.body {
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
     z-index: -9;
-
 }
 
 header {
@@ -61,8 +60,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
-    
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     .logo {
         h1 {
             font-size: 38px;
@@ -92,64 +90,61 @@ nav {
             }
         }
     }
-    
-   .ham-burger{
-
-    position: absolute;
-    z-index: 10;
-    top: 35%;
-    right: calc(15%);
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-    height: 20px;
-    display: none;
-    transform: translateX(50%);
-    span{
-        top: 0;
-        height: 5px;
-        width: 40px;
-        border-radius: 9px;
-        background-color: $main;
+    .ham-burger {
         position: absolute;
-        transition: all 0.3s;
-
-        &:nth-child(1){
+        z-index: 10;
+        top: 35%;
+        right: calc(15%);
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 20px;
+        display: none;
+        cursor: pointer;
+        transform: translateX(50%);
+        span {
             top: 0;
-        }
-        &:nth-child(2){
-            top: 50%;
-        }
-        &:nth-child(3){
-            top: 50%;
-        }
-        &:nth-child(4){
-            top: 100%;
-        }
-    }
-   }
-   .ham-burger-open{
-    span{
-        background-color: white;
-        &:first-child , &:last-child{
-            opacity: 0;
-        }
-        &:nth-child(2){
-            transform: rotate(-45deg);
-        }
-        &:nth-child(3){
-            transform: rotate(45deg);
+            height: 5px;
+            width: 40px;
+            border-radius: 9px;
+            background-color: $main;
+            position: absolute;
+            transition: all 0.3s;
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2) {
+                top: 50%;
+            }
+            &:nth-child(3) {
+                top: 50%;
+            }
+            &:nth-child(4) {
+                top: 100%;
+            }
         }
     }
-   }
+    .ham-burger-open {
+        span {
+            background-color: white;
+            &:first-child,
+            &:last-child {
+                opacity: 0;
+            }
+            &:nth-child(2) {
+                transform: rotate(-45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(45deg);
+            }
+        }
+    }
 }
-
 
 // Hero Section
 .hero {
     height: 85vh;
     .hero-container {
-        
         height: 85vh;
         width: 100vw;
         background-size: cover;
@@ -188,12 +183,8 @@ nav {
     padding: 7% 13%;
     display: flex;
     justify-content: space-between;
-    // background-image: url('../images/light-blob-1.png');
-    // background-size: cover;
-    // align-items: center;
     .data {
         width: 50%;
-        // padding: 1% 4%;
         h4 {
             font-size: 20px;
             text-transform: uppercase;
@@ -239,61 +230,46 @@ nav {
             left: 15px;
             bottom: 15px;
             z-index: -1;
-            // -webkit-animation: about-image 1s infinite alternate;
-            // animation: about-image 1s infinite alternate;
-            // animation-duration: 1.3s ease;
-            // @keyframes about-image {
-            //     0% {
-            //         transform: translateY(0);
-            //         border: 1px solid $black;
-            //         transition-duration: 3s;
-            //     }
-            //     100% {
-            //         transform: translateY(-15px);
-            //         transition-duration: 3s;
-            //         border: 1px solid $main;
-            //     }
-            // }
         }
     }
     .video {
-                width: 400px;
-                height: 400px;
-                background-size: cover;
-                background-position: center center;
-                position: relative;
-                box-shadow: inset 0 0 0 2000px $black-opactity-video;
-                transition-duration: 0.5s;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 18%;
-                img {
-                    width: 80px;
-                    height: 50px;
-                    -webkit-animation: blink-button 1s infinite alternate;
-                    animation: blink-button 1s infinite alternate;
-                    @keyframes blink-button {
-                        0% {
-                            opacity: 0.9;
-                        }
-                        50% {
-                            opacity: 0.6;
-                        }
-                        100% {
-                            opacity: 1;
-                        }
-                    }
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        box-shadow: inset 0 0 0 2000px $black-opactity-video;
+        transition-duration: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18%;
+        img {
+            width: 80px;
+            height: 50px;
+            -webkit-animation: blink-button 1s infinite alternate;
+            animation: blink-button 1s infinite alternate;
+            @keyframes blink-button {
+                0% {
+                    opacity: 0.9;
                 }
-                &:hover {
-                    box-shadow: none;
-                    transition-duration: 0.5s;
-                    cursor: pointer;
-                    img {
-                        opacity: 0.8;
-                    }
+                50% {
+                    opacity: 0.6;
+                }
+                100% {
+                    opacity: 1;
                 }
             }
+        }
+        &:hover {
+            box-shadow: none;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            img {
+                opacity: 0.8;
+            }
+        }
+    }
 }
 
 // Few Words sections
@@ -302,9 +278,7 @@ nav {
     background-color: $light-bg;
     position: relative;
     z-index: 1;
-
     h1 {
-
         margin-bottom: calc(22px + 15px);
     }
     .few-words-container {
@@ -528,8 +502,7 @@ nav {
             transition-delay: 1ms;
             min-height: 60vh;
             // margin : 0 12px;
-                            position: relative;
-
+            position: relative;
             .image {
                 width: 100%;
                 height: 240px;
@@ -587,9 +560,8 @@ nav {
     }
 }
 
-.home-blog-subscribe{
+.home-blog-subscribe {
     padding: 9% 0 0 !important;
-   
 }
 
 .home-services {
@@ -670,10 +642,8 @@ nav {
     }
     .row {
         display: flex;
-        
         margin: 0 -5px;
     }
-
     .card {
         color: $white;
         padding-right: 20px;
@@ -701,10 +671,13 @@ nav {
                 gap: 20px;
                 font-size: 18px;
                 padding: 10px 0;
+                a {
+                    color: $white;
+                }
                 li {
                     padding-left: 10px;
                     transition-duration: 0.4s;
-                        white-space: nowrap;
+                    white-space: nowrap;
                     .far {
                         padding-right: 8px;
                         font-size: 20px;
@@ -718,13 +691,12 @@ nav {
             }
         }
     }
-    .footer-quote{
+    .footer-quote {
         color: white;
         font-size: 24px;
         text-align: center;
         margin: 40px auto 0;
     }
-
 }
 
 .copyright {
@@ -809,9 +781,7 @@ nav {
     padding: 1% 3%;
     width: 60%;
     border-radius: 4px;
-    
 }
-
 
 .about-story {
     flex-direction: row-reverse;
@@ -855,7 +825,7 @@ nav {
         -moz-box-shadow: 11px 7px 40px -7px rgba(0, 0, 0, 0.150);
         &::before {
             right: unset !important;
-            left:  15px;
+            left: 15px;
             bottom: 15px;
             background-image: url('../images/Rectangle-49.png');
         }
@@ -1007,7 +977,8 @@ nav {
     }
 }
 
-.lets-talk , .blog-subscribe {
+.lets-talk,
+.blog-subscribe {
     padding: 9% 13%;
     .lets-talk-container {
         padding: 6% 9%;
@@ -1035,7 +1006,6 @@ nav {
                 font-size: 28px;
                 font-weight: 700;
                 margin-bottom: 22px;
-
             }
             p {
                 color: $white;
@@ -1092,18 +1062,17 @@ nav {
                     color: gold;
                 }
             }
-            hr{
-                    margin: 0  0 0 auto;
-                    width: 75%;
-                    height: 1.5px;
-                    background-color: $main;
-                    transform: translateX(12%);
+            hr {
+                margin: 0 0 0 auto;
+                width: 75%;
+                height: 1.5px;
+                background-color: $main;
+                transform: translateX(12%);
             }
             p {
                 padding: 6px 0;
                 font-size: 12px;
                 // position: relative;
-               
             }
         }
     }
@@ -1113,8 +1082,6 @@ nav {
 .contact-section {
     font-family: 'Poppins', sans-serif;
     padding: 7% 13% 0%;
-    
-
     // background-size: contain;
     // background-position: bottom;
     // background-repeat: no-repeat;
@@ -1240,13 +1207,12 @@ nav {
     padding: 0% 8%;
     background-image: url('../images/contact-wave-2.png');
     background-size: cover;
-    background-position: bottom ;
+    background-position: bottom;
     height: 60vh;
-
     .visitors-container {
         position: absolute;
-        bottom:15%;
-        width:88%;
+        bottom: 15%;
+        width: 88%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1322,10 +1288,6 @@ nav {
 }
 
 // --------------------------------------blog page--------------------------------
-.blog-nav{
-    border-bottom: 1px solid $main;
-}
-
 .blog-main {
     padding: 3% 17%;
     display: flex;
@@ -1412,5 +1374,28 @@ nav {
         opacity: 0.5;
         position: absolute;
         bottom: 0;
+    }
+}
+
+// PP page, T&C page and Disclamer page CSS
+.disclamer-content {
+    text-align: left;
+    padding: 5%;
+    h1,
+    h2,
+    strong {
+        color: $main;
+    }
+    p,
+    ul {
+        color: $darkGrey;
+    }
+    ul {
+        list-style: square;
+        padding-left: 20px;
+        text-transform: capitalize;
+    }
+    strong {
+        padding: 10px 0px;
     }
 }

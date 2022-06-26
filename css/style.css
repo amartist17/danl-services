@@ -126,14 +126,10 @@ Color, fonts and other variables Ends here
 }
 
 .shadow-2 {
-  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.171);
-  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.171);
-  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.171);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .shadow-2:hover {
-  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.06);
-  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   transition-delay: 1ms;
   transition: 0.4s;
 }
@@ -146,6 +142,14 @@ Color, fonts and other variables Ends here
 
 .shadow-4 {
   box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.279);
+}
+
+.shadow-5 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.shadow-6 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 .light-hr {
@@ -385,6 +389,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 nav .logo h1 {
   font-size: 38px;
@@ -423,6 +428,7 @@ nav .ham-burger {
   width: 40px;
   height: 20px;
   display: none;
+  cursor: pointer;
   transform: translateX(50%);
 }
 nav .ham-burger span {
@@ -983,6 +989,9 @@ nav .ham-burger-open span:nth-child(3) {
   font-size: 18px;
   padding: 10px 0;
 }
+.footer .card .links ul a {
+  color: #fff;
+}
 .footer .card .links ul li {
   padding-left: 10px;
   transition-duration: 0.4s;
@@ -1274,10 +1283,12 @@ nav .ham-burger-open span:nth-child(3) {
   bottom: 15px;
 }
 
-.lets-talk, .blog-subscribe {
+.lets-talk,
+.blog-subscribe {
   padding: 9% 13%;
 }
-.lets-talk .lets-talk-container, .blog-subscribe .lets-talk-container {
+.lets-talk .lets-talk-container,
+.blog-subscribe .lets-talk-container {
   padding: 6% 9%;
   position: relative;
   background-size: cover;
@@ -1287,7 +1298,8 @@ nav .ham-burger-open span:nth-child(3) {
   background-repeat: no-repeat;
   background-position: center;
 }
-.lets-talk .lets-talk-container::before, .blog-subscribe .lets-talk-container::before {
+.lets-talk .lets-talk-container::before,
+.blog-subscribe .lets-talk-container::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -1297,25 +1309,30 @@ nav .ham-burger-open span:nth-child(3) {
   bottom: 20px;
   z-index: -1;
 }
-.lets-talk .lets-talk-container .data, .blog-subscribe .lets-talk-container .data {
+.lets-talk .lets-talk-container .data,
+.blog-subscribe .lets-talk-container .data {
   width: 65%;
 }
-.lets-talk .lets-talk-container .data h4, .blog-subscribe .lets-talk-container .data h4 {
+.lets-talk .lets-talk-container .data h4,
+.blog-subscribe .lets-talk-container .data h4 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 22px;
 }
-.lets-talk .lets-talk-container .data p, .blog-subscribe .lets-talk-container .data p {
+.lets-talk .lets-talk-container .data p,
+.blog-subscribe .lets-talk-container .data p {
   color: #fff;
   font-size: 16px;
 }
-.lets-talk .call-for-action, .blog-subscribe .call-for-action {
+.lets-talk .call-for-action,
+.blog-subscribe .call-for-action {
   width: 40%;
   display: flex;
   justify-content: center;
 }
-.lets-talk .call-for-action button, .blog-subscribe .call-for-action button {
+.lets-talk .call-for-action button,
+.blog-subscribe .call-for-action button {
   background-color: #fff;
   color: #2154CF;
   border-radius: 0%;
@@ -1557,7 +1574,7 @@ nav .ham-burger-open span:nth-child(3) {
   font-size: 13px;
 }
 #credit:hover {
-  right: 35;
+  right: 25;
 }
 @-webkit-keyframes credit {
   0% {
@@ -1607,10 +1624,6 @@ nav .ham-burger-open span:nth-child(3) {
 }
 #credit a {
   color: #2154CF;
-}
-
-.blog-nav {
-  border-bottom: 1px solid #2154CF;
 }
 
 .blog-main {
@@ -1702,6 +1715,28 @@ nav .ham-burger-open span:nth-child(3) {
   bottom: 0;
 }
 
+.disclamer-content {
+  text-align: left;
+  padding: 5%;
+}
+.disclamer-content h1,
+.disclamer-content h2,
+.disclamer-content strong {
+  color: #2154CF;
+}
+.disclamer-content p,
+.disclamer-content ul {
+  color: #515151;
+}
+.disclamer-content ul {
+  list-style: square;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+.disclamer-content strong {
+  padding: 10px 0px;
+}
+
 /*--------
 
 Color, fonts and other variables here
@@ -1714,11 +1749,6 @@ Color, fonts and other variables here
 Color, fonts and other variables Ends here
 
 ---------*/
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
   header {
     padding: 0.8% 7%;
@@ -1732,22 +1762,34 @@ Color, fonts and other variables Ends here
     margin-bottom: 14px;
   }
 
-  .about, .services, .few-words {
+  .about,
+.services,
+.few-words {
     padding: 7% 9%;
   }
-  .about h1, .services h1, .few-words h1 {
+  .about h1,
+.services h1,
+.few-words h1 {
     font-size: 28px !important;
   }
-  .about .data, .services .data, .few-words .data {
+  .about .data,
+.services .data,
+.few-words .data {
     width: 45% !important;
   }
-  .about .data p, .services .data p, .few-words .data p {
+  .about .data p,
+.services .data p,
+.few-words .data p {
     font-size: 16px !important;
   }
-  .about .data .buttons button, .services .data .buttons button, .few-words .data .buttons button {
+  .about .data .buttons button,
+.services .data .buttons button,
+.few-words .data .buttons button {
     margin: 22px 3px;
   }
-  .about .image, .services .image, .few-words .image {
+  .about .image,
+.services .image,
+.few-words .image {
     width: 400px;
     height: 400px;
   }
@@ -1756,13 +1798,31 @@ Color, fonts and other variables Ends here
     width: 80%;
   }
 
-  .articles, .blog, .home-services, .social-media, .request-callBack, .lets-talk, .reviews {
+  .articles,
+.blog,
+.home-services,
+.social-media,
+.request-callBack,
+.lets-talk,
+.reviews {
     padding: 9%;
   }
-  .articles .highlight, .blog .highlight, .home-services .highlight, .social-media .highlight, .request-callBack .highlight, .lets-talk .highlight, .reviews .highlight {
+  .articles .highlight,
+.blog .highlight,
+.home-services .highlight,
+.social-media .highlight,
+.request-callBack .highlight,
+.lets-talk .highlight,
+.reviews .highlight {
     display: none !important;
   }
-  .articles h1, .blog h1, .home-services h1, .social-media h1, .request-callBack h1, .lets-talk h1, .reviews h1 {
+  .articles h1,
+.blog h1,
+.home-services h1,
+.social-media h1,
+.request-callBack h1,
+.lets-talk h1,
+.reviews h1 {
     font-size: 28px !important;
   }
 
@@ -1785,7 +1845,8 @@ Color, fonts and other variables Ends here
     padding: 1% 9%;
   }
 
-  .about-story .image, .about-vision .image {
+  .about-story .image,
+.about-vision .image {
     height: 550px;
   }
 
@@ -1843,30 +1904,46 @@ Color, fonts and other variables Ends here
     font-size: 48px;
   }
 
-  .about h1, .services h1, .few-words h1 {
+  .about h1,
+.services h1,
+.few-words h1 {
     font-size: 24px !important;
   }
-  .about .data, .services .data, .few-words .data {
+  .about .data,
+.services .data,
+.few-words .data {
     width: 45% !important;
   }
-  .about .data br + p, .services .data br + p, .few-words .data br + p {
+  .about .data br + p,
+.services .data br + p,
+.few-words .data br + p {
     display: none !important;
   }
-  .about .data br, .services .data br, .few-words .data br {
+  .about .data br,
+.services .data br,
+.few-words .data br {
     display: none;
   }
-  .about .data .buttons button, .services .data .buttons button, .few-words .data .buttons button {
+  .about .data .buttons button,
+.services .data .buttons button,
+.few-words .data .buttons button {
     font-size: 16px !important;
   }
-  .about .data .read-more, .services .data .read-more, .few-words .data .read-more {
+  .about .data .read-more,
+.services .data .read-more,
+.few-words .data .read-more {
     margin-top: 0px !important;
     float: left !important;
   }
-  .about .image, .services .image, .few-words .image {
+  .about .image,
+.services .image,
+.few-words .image {
     width: 320px !important;
     height: 320px !important;
   }
-  .about .video, .services .video, .few-words .video {
+  .about .video,
+.services .video,
+.few-words .video {
     width: 320px !important;
     height: 320px !important;
   }
@@ -1916,26 +1993,38 @@ Color, fonts and other variables Ends here
     white-space: nowrap;
   }
 
-  .about-hero, .services-hero, .contact-hero {
+  .about-hero,
+.services-hero,
+.contact-hero {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
   }
-  .about-hero .map, .services-hero .map, .contact-hero .map {
+  .about-hero .map,
+.services-hero .map,
+.contact-hero .map {
     display: none;
   }
-  .about-hero p, .services-hero p, .contact-hero p {
+  .about-hero p,
+.services-hero p,
+.contact-hero p {
     margin: 0 auto;
     width: 70%;
   }
-  .about-hero h4, .services-hero h4, .contact-hero h4 {
+  .about-hero h4,
+.services-hero h4,
+.contact-hero h4 {
     font-size: 28px;
   }
-  .about-hero h1, .services-hero h1, .contact-hero h1 {
+  .about-hero h1,
+.services-hero h1,
+.contact-hero h1 {
     font-size: 48px;
   }
-  .about-hero button, .services-hero button, .contact-hero button {
+  .about-hero button,
+.services-hero button,
+.contact-hero button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -2005,6 +2094,22 @@ Color, fonts and other variables Ends here
   }
 }
 @media only screen and (max-width: 800px) {
+  .copyright {
+    padding: 1% 13%;
+    text-align: center;
+  }
+  .copyright h4 {
+    width: 100%;
+  }
+  .copyright h4 span {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 10px;
+    float: none;
+    text-align: center;
+  }
+
   header .header-items {
     width: 100%;
     justify-content: space-around;
@@ -2054,23 +2159,42 @@ Color, fonts and other variables Ends here
     transform: translateX(0%) !important;
   }
 
-  .about, .services, .few-words {
+  .about,
+.services,
+.few-words {
     padding: 9% 7%;
     flex-direction: column-reverse;
     align-items: center;
     position: relative;
   }
-  .about .data, .about .image, .services .data, .services .image, .few-words .data, .few-words .image {
+  .about .data,
+.about .image,
+.services .data,
+.services .image,
+.few-words .data,
+.few-words .image {
     width: 80% !important;
   }
-  .about .image, .services .image, .few-words .image {
+  .about .image,
+.services .image,
+.few-words .image {
     margin-bottom: 22px;
   }
-  .about h4, .about h1, .about p, .services h4, .services h1, .services p, .few-words h4, .few-words h1, .few-words p {
+  .about h4,
+.about h1,
+.about p,
+.services h4,
+.services h1,
+.services p,
+.few-words h4,
+.few-words h1,
+.few-words p {
     text-align: center !important;
     margin-bottom: 12px !important;
   }
-  .about .buttons, .services .buttons, .few-words .buttons {
+  .about .buttons,
+.services .buttons,
+.few-words .buttons {
     width: 100%;
     margin: 0;
     justify-content: center !important;
@@ -2099,7 +2223,8 @@ Color, fonts and other variables Ends here
     margin: 22px auto;
   }
 
-  .heading, .sub-heading {
+  .heading,
+.sub-heading {
     text-align: center;
     margin-bottom: 12px !important;
   }
@@ -2111,15 +2236,18 @@ Color, fonts and other variables Ends here
     width: 80%;
     margin: 22px auto;
   }
-  .blog .blog-subscribe .lets-talk-container, .blog .home-blog-subscribe .lets-talk-container {
+  .blog .blog-subscribe .lets-talk-container,
+.blog .home-blog-subscribe .lets-talk-container {
     flex-direction: column;
   }
-  .blog .blog-subscribe .lets-talk-container .data, .blog .home-blog-subscribe .lets-talk-container .data {
+  .blog .blog-subscribe .lets-talk-container .data,
+.blog .home-blog-subscribe .lets-talk-container .data {
     width: 100%;
     font-size: 22px !important;
     text-align: center;
   }
-  .blog .blog-subscribe .lets-talk-container .call-for-action, .blog .home-blog-subscribe .lets-talk-container .call-for-action {
+  .blog .blog-subscribe .lets-talk-container .call-for-action,
+.blog .home-blog-subscribe .lets-talk-container .call-for-action {
     width: 50% !important;
   }
 
@@ -2165,7 +2293,9 @@ Color, fonts and other variables Ends here
     width: 50%;
   }
 
-  .about-hero p, .services-hero p, .contact-hero p {
+  .about-hero p,
+.services-hero p,
+.contact-hero p {
     width: 80%;
   }
 
@@ -2181,14 +2311,16 @@ Color, fonts and other variables Ends here
   .about-team {
     flex-direction: column-reverse;
   }
-  .about-team .team-data, .about-team .team-image {
+  .about-team .team-data,
+.about-team .team-image {
     width: 100%;
   }
   .about-team .team-data {
     background-color: #2154CF;
     padding-bottom: 0;
   }
-  .about-team .team-data h4, .about-team .team-data h1 {
+  .about-team .team-data h4,
+.about-team .team-data h1 {
     text-align: center !important;
     color: white;
     margin-bottom: 6px;
@@ -2237,14 +2369,21 @@ Color, fonts and other variables Ends here
   .contact-section .main-block {
     flex-direction: column;
   }
-  .contact-section .main-block .contact-form, .contact-section .main-block .contact-details {
+  .contact-section .main-block .contact-form,
+.contact-section .main-block .contact-details {
     width: 100%;
     padding: 7% 9%;
   }
-  .contact-section .main-block .contact-form h1, .contact-section .main-block .contact-form h4, .contact-section .main-block .contact-details h1, .contact-section .main-block .contact-details h4 {
+  .contact-section .main-block .contact-form h1,
+.contact-section .main-block .contact-form h4,
+.contact-section .main-block .contact-details h1,
+.contact-section .main-block .contact-details h4 {
     margin-bottom: 22px;
   }
-  .contact-section .main-block .contact-form h1 br, .contact-section .main-block .contact-form h4 br, .contact-section .main-block .contact-details h1 br, .contact-section .main-block .contact-details h4 br {
+  .contact-section .main-block .contact-form h1 br,
+.contact-section .main-block .contact-form h4 br,
+.contact-section .main-block .contact-details h1 br,
+.contact-section .main-block .contact-details h4 br {
     display: none;
   }
   .contact-section .main-block .contact-details {
@@ -2281,17 +2420,33 @@ Color, fonts and other variables Ends here
     margin: 30px auto !important;
   }
 
-  .hero, .about-hero, .services-hero, .contact-hero {
+  .hero,
+.about-hero,
+.services-hero,
+.contact-hero {
     height: 65vh;
   }
-  .hero .hero-container, .about-hero .hero-container, .services-hero .hero-container, .contact-hero .hero-container {
+  .hero .hero-container,
+.about-hero .hero-container,
+.services-hero .hero-container,
+.contact-hero .hero-container {
     height: 65vh;
   }
 
-  .hero .hero-data, .hero p, .about-hero .hero-data, .about-hero p, .services-hero .hero-data, .services-hero p, .contact-hero .hero-data, .contact-hero p {
+  .hero .hero-data,
+.hero p,
+.about-hero .hero-data,
+.about-hero p,
+.services-hero .hero-data,
+.services-hero p,
+.contact-hero .hero-data,
+.contact-hero p {
     width: 100% !important;
   }
-  .hero h1, .about-hero h1, .services-hero h1, .contact-hero h1 {
+  .hero h1,
+.about-hero h1,
+.services-hero h1,
+.contact-hero h1 {
     font-size: 36px !important;
   }
 
@@ -2300,7 +2455,12 @@ Color, fonts and other variables Ends here
     display: none !important;
   }
 
-  .about .data, .about .image, .services .data, .services .image, .few-words .data, .few-words .image {
+  .about .data,
+.about .image,
+.services .data,
+.services .image,
+.few-words .data,
+.few-words .image {
     width: 100% !important;
   }
 
@@ -2367,7 +2527,9 @@ Color, fonts and other variables Ends here
     width: 90%;
   }
 
-  .about, .services, .few-words {
+  .about,
+.services,
+.few-words {
     padding: 14% 7%;
   }
 
