@@ -1,0 +1,312 @@
+@import '_components.scss';
+// Font colors
+.font-1 {
+    color: $main;
+}
+
+.font-2 {
+    color: $white;
+}
+
+.font-3 {
+    color: $light-bg;
+}
+
+.font-4 {
+    color: $highlight-blue;
+}
+
+.font-5 {
+    color: $highlight-orange;
+}
+
+.font-6 {
+    color: $highlight-green;
+}
+
+.font-7 {
+    color: $border-light;
+}
+
+.font-8 {
+    color: $dullGrey;
+}
+
+.font-9 {
+    color: $black-opactity;
+}
+
+.font-10 {
+    color: $blue-opactity;
+}
+
+// Background colors
+.background-1 {
+    color: $main;
+}
+
+.background-2 {
+    color: $white;
+}
+
+.background-3 {
+    color: $light-bg;
+}
+
+.background-4 {
+    color: $highlight-blue;
+}
+
+.background-5 {
+    color: $highlight-orange;
+}
+
+.background-6 {
+    color: $highlight-green;
+}
+
+.background-7 {
+    color: $border-light;
+}
+
+.background-8 {
+    color: $dullGrey;
+}
+
+.background-9 {
+    color: $black-opactity;
+}
+
+.background-10 {
+    color: $blue-opactity;
+}
+
+.background-11 {
+    color: $blue-opactity-2;
+}
+
+//Fonts
+.font-1 {
+    font-family: $primary;
+}
+
+
+/*----------------------- Globle classes Starts here -------------*/
+
+// Globle shadow-1
+.shadow-1 {
+    box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+    -webkit-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+    -moz-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+}
+
+// Globle shadow-2 with hover
+.shadow-2 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    &:hover {
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        transition-delay: 1ms;
+        transition: 0.4s;
+    }
+}
+
+// Globle shadow-3 light color without hover
+.shadow-3 {
+    box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.150);
+    -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.150);
+    -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.150);
+}
+
+// Globle shadow-4 dark and large color without hover
+.shadow-4 {
+    -webkit-box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.277);
+    -moz-box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.292);
+    box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.279);
+}
+
+.shadow-5 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.shadow-6 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.light-hr {
+    color: $black-opactity;
+    opacity: 0.4;
+}
+
+// Button Global
+button {
+    // margin-top: 22px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 22px;
+    background-color: $main;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    transition-delay: 1ms;
+    cursor: pointer;
+    &:hover {
+        box-shadow: none;
+        transition: 0.3s;
+        transition-delay: 1ms;
+    }
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px $border-light solid;
+    padding: 1% 2% 1% 1%;
+    font-size: 22px;
+    color: $dullGrey;
+    &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px $border-light solid;
+    }
+}
+
+// globle button-2 Uppercase
+.button-2 {
+    margin-top: 22px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    background-color: $main;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+    transition-delay: 1ms;
+    cursor: pointer;
+    &:hover {
+        box-shadow: none;
+        transition: 0.3s;
+        transition-delay: 1ms;
+    }
+}
+
+// Show more Global
+.show-more {
+    margin-top: 60px;
+    margin-bottom: 44px;
+    text-align: center;
+    span {
+        font-size: 20px;
+        text-transform: capitalize;
+        padding: 10px 22px;
+        color: $main;
+        background-color: none;
+        border: none;
+        border-radius: 4px;
+        transition: 0.3s;
+        font-weight: 700;
+        transition-delay: 1ms;
+        font-family: $primary;
+        cursor: pointer;
+        text-transform: uppercase;
+        &:hover {
+            opacity: 0.8;
+            transition: 0.3s;
+            transition-delay: 1ms;
+        }
+    }
+}
+
+// Anchor tag globle
+a {
+    text-decoration: none;
+}
+
+// newslatter , phone and subscribe
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+
+#response{
+    text-align: center;
+}
+
+.subscribe {
+    border: $border-light 1px solid;
+    border-radius: 5px;
+    background-color: $white;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    h4 {
+        color: $main;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    input {
+        letter-spacing: 4px;
+        border: none;
+        border-bottom: 1px $border-light solid;
+        padding: 1% 2% 1% 1%;
+        font-size: 22px;
+        color: $dullGrey;
+        width: 65%;
+        &:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px $border-light solid;
+        }
+    }
+    button {
+        margin-top: 0px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+}
+
+// Subheading globle
+.sub-heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 22px;
+    color: $main;
+}
+
+// main heading globle
+.heading {
+    font-size: 34px;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+
+.highlight-blue {
+    background-color: $highlight-blue;
+}
+
+.highlight-orange {
+    background-color: $highlight-orange;
+}
+
+.highlight-green {
+    background-color: $highlight-green;
+}
+
+.active {
+    &:before {
+        content: "";
+        width: calc(100% + 8px);
+        height: 3px;
+        background-color: $main;
+        position: absolute;
+        bottom: -4px;
+        left: -4px;
+    }
+}
+
+
+/*----------------------- Globle classes Ends here -------------*/
